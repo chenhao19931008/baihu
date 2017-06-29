@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../assets/js/jquery-1.11.1.js"></script>
+    <!--<![endif]-->
+    <script src="../layer/layer.js"></script>
+    <script src="../assets/js/amazeui.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script type="text/javascript" src="../js/style.js"></script>
+    <script src="../js/jquery.star-rating-svg.js"></script>
+    <link rel="stylesheet" type="text/css" href="../layer/css/layer.css">
+    <link rel="stylesheet" href="../isscroll/two.css">
+    <link rel="stylesheet" href="../assets/css/amazeui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body  style="background-color: #fff;">
+    <nav class="pl_nav fans_nav">
+        <div class="dq_bac">
+            <a href="javascript:" onclick="self.location=document.referrer;">
+                <img class="dq_back" src="../img/back.png">
+            </a>
+        </div><!-- 
+         --><span>美食视频</span><!-- 
+         --><div class="dq_bac right">
+            <a href="javascript:">
+                <img class="dq_back" src="../img/search.png">
+            </a>
+        </div>
+    </nav>
+    <div class="video_tab">
+        <ul class="video_tabar am-avg-sm-4">
+            <li>
+                <a href="javascript:void(0)">今日推荐</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">厨艺</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">健康养生</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">美食综艺</a>
+            </li>
+        </ul>
+        <span class="my_tab_line"></span>
+    </div>
+    <section class="video_section">
+        <ul class="video_ul">
+            <li class="video_ul_li">
+                <dl class="video_dl">
+                    <a href="">
+                        <dt>
+                            <img src="../img/bg2.png">
+                            <span class="video_count">
+                                <span>2145</span>
+                            </span>
+                        </dt>
+                        <dd>
+                            <h4>水果藕羹</h4>
+                            <p>像软软的布丁，有清新的藕香，缤纷的果甜，还能清热解毒，降火去燥；</p>
+                        </dd>
+                    </a>
+                </dl>
+            </li>
+            <li class="video_ul_li">
+                <dl class="video_dl">
+                    <a href="">
+                        <dt>
+                            <img src="../img/bg2.png">
+                            <span class="video_count">
+                                <span>2145</span>
+                            </span>
+                        </dt>
+                        <dd>
+                            <h4>水果藕羹</h4>
+                            <p>像软软的布丁，有清新的藕香，缤纷的果甜，还能清热解毒，降火去燥；</p>
+                        </dd>
+                    </a>
+                </dl>
+            </li>
+            <!-- 视频菜谱2 -->
+            <li class="video_cy_ul_li">
+                <dl class="video_cy_dl">
+                    <a href="">
+                        <dt>
+                            <img src="../img/cake1.png">
+                            <span class="video_count">
+                                <span>2145</span>
+                            </span>
+                            <p></p>
+                        </dt>
+                        <dd>
+                            <h4>紫米柠檬茶</h4>
+                            <p>一杯清凉酸甜的柠檬茶度过一个美好的下午茶时光</p>
+                        </dd>
+                    </a>
+                </dl>
+            </li>
+            <li class="video_cy_ul_li">
+                <dl class="video_cy_dl">
+                    <a href="">
+                        <dt>
+                            <img src="../img/cake1.png">
+                            <span class="video_count">
+                                <span>2145</span>
+                            </span>
+                            <p></p>
+                        </dt>
+                        <dd>
+                            <h4>紫米柠檬茶</h4>
+                            <p>一杯清凉酸甜的柠檬茶度过一个美好的下午茶时光</p>
+                        </dd>
+                    </a>
+                </dl>
+            </li>
+
+            <!-- 视频菜谱3 -->
+            <li class="video_cy_ul_li">
+                <dl class="video_ys_dl">
+                    <a href="">
+                        <dt>
+                            <img src="../img/cake1.png">
+                            <span class="video_count">
+                                <span>2145</span>
+                            </span>
+                            <p></p>
+                        </dt>
+                        <dd>
+                            <h4>紫米柠檬茶</h4>
+                        </dd>
+                    </a>
+                </dl>
+            </li>
+            <li class="video_cy_ul_li">
+                <dl class="video_ys_dl">
+                    <a href="">
+                        <dt>
+                            <img src="../img/cake1.png">
+                            <span class="video_count">
+                                <span>2145</span>
+                            </span>
+                            <p></p>
+                        </dt>
+                        <dd>
+                            <h4>紫米柠檬茶</h4>
+                        </dd>
+                    </a>
+                </dl>
+            </li>
+        </ul>
+    </section>
+<script src="../isscroll/Scrollload.js"></script>
+<script type="text/javascript">
+    $(".video_tabar li").each(function(){
+        $(this).unbind("click");
+        //给tab添加点击事件
+        $(this).click(function(){
+            $(".my_tab_line").animate({
+                "left":25*$(this).index()+"%",
+            },100);
+        })
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<script src="../assets/js/jquery-1.11.1.js"></script>
+	<!--<![endif]-->
+	<script src="../assets/js/amazeui.min.js"></script>
+	<script src="../assets/js/app.js"></script>
+	<script type="text/javascript" src="../js/style.js"></script>
+	<script src="../js/jquery.star-rating-svg.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/star-rating-svg.css">
+	<link rel="stylesheet" href="../isscroll/two.css">
+	<link rel="stylesheet" href="../assets/css/amazeui.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<style type="text/css">
+	.scrollload-bottom{
+	position: absolute;
+	width: 100%;
+	bottom: 2.5rem;
+	}
+	.scrollload-bottom .my{
+		font-size: 13px;
+	}
+</style>
+<body style="padding-bottom: 5rem;background-color: #fff;">
+	<nav class="pl_nav">
+		<div class="dq_bac">
+			<a href="javascript:" onclick="self.location=document.referrer;">
+				<img class="dq_back" src="../img/back.png">
+			</a>
+		</div><!-- 
+		 --><span>全部评论</span><!-- 
+		 --><div class="dq_bac">
+		</div>
+	</nav>
+	<section class="dr_comment pl_comment">
+		<dl>
+			<a href="">
+				<dt class="dr_comment_">
+					<img class="dr_user" src="../img/people.png">
+					<div class="dr_comment_div">
+						<div class="dr_comment_con">
+							<span class="dr_comment_tit">五月天</span>
+							<span class="dr_comment_time">2017-06-12</span>
+						</div>
+						<p class="dr_comment_txt">棒棒哒，一直想找一个详细的教程，终于找到了！</p>
+					</div>
+				</dt>
+			</a>
+		</dl>
+		<dl>
+			<a href="">
+				<dt class="dr_comment_">
+					<img class="dr_user" src="../img/people.png">
+					<div class="dr_comment_div">
+						<div class="dr_comment_con">
+							<span class="dr_comment_tit">五月天</span>
+							<span class="dr_comment_time">2017-06-12</span>
+						</div>
+						<p class="dr_comment_txt">棒棒哒，一直想找一个详细的教程，终于找到了！</p>
+					</div>
+				</dt>
+			</a>
+		</dl>
+		<dl>
+			<a href="">
+				<dt class="dr_comment_">
+					<img class="dr_user" src="../img/people.png">
+					<div class="dr_comment_div">
+						<div class="dr_comment_con">
+							<span class="dr_comment_tit">五月天</span>
+							<span class="dr_comment_time">2017-06-12</span>
+						</div>
+						<p class="dr_comment_txt">棒棒哒，一直想找一个详细的教程，终于找到了！</p>
+					</div>
+				</dt>
+			</a>
+		</dl>
+		<dl>
+			<a href="">
+				<dt class="dr_comment_">
+					<img class="dr_user" src="../img/people.png">
+					<div class="dr_comment_div">
+						<div class="dr_comment_con">
+							<span class="dr_comment_tit">五月天</span>
+							<span class="dr_comment_time">2017-06-12</span>
+						</div>
+						<p class="dr_comment_txt">棒棒哒，一直想找一个详细的教程，终于找到了！</p>
+					</div>
+				</dt>
+			</a>
+		</dl>
+		<dl>
+			<a href="">
+				<dt class="dr_comment_">
+					<img class="dr_user" src="../img/people.png">
+					<div class="dr_comment_div">
+						<div class="dr_comment_con">
+							<span class="dr_comment_tit">五月天</span>
+							<span class="dr_comment_time">2017-06-12</span>
+						</div>
+						<p class="dr_comment_txt">棒棒哒，一直想找一个详细的教程，终于找到了！</p>
+					</div>
+				</dt>
+			</a>
+		</dl>
+		<dl>
+			<a href="">
+				<dt class="dr_comment_">
+					<img class="dr_user" src="../img/people.png">
+					<div class="dr_comment_div">
+						<div class="dr_comment_con">
+							<span class="dr_comment_tit">五月天</span>
+							<span class="dr_comment_time">2017-06-12</span>
+						</div>
+						<p class="dr_comment_txt">棒棒哒，一直想找一个详细的教程，终于找到了！</p>
+					</div>
+				</dt>
+			</a>
+		</dl>
+		<dl>
+			<a href="">
+				<dt class="dr_comment_">
+					<img class="dr_user" src="../img/people.png">
+					<div class="dr_comment_div">
+						<div class="dr_comment_con">
+							<span class="dr_comment_tit">五月天</span>
+							<span class="dr_comment_time">2017-06-12</span>
+						</div>
+						<p class="dr_comment_txt">棒棒哒，一直想找一个详细的教程，终于找到了！</p>
+					</div>
+				</dt>
+			</a>
+		</dl>
+	</section>
+	<div class="pl_add">
+		<a href="">
+			<img src="../img/comment1.png">
+			<span>添加评论</span>
+		</a>
+	</div>
+	<script src="../isscroll/Scrollload.js"></script>
+	<script type="text/javascript">
+		var count = 1
+		new Scrollload(document.querySelector('body'),function(sl) {
+		    	setTimeout(function () {
+	            if (count++ < 6) {
+	                $('.pl_comment').append("0");
+	                sl.unLock();
+	            } else {
+	                sl.noData();
+	            }
+	        }, 500);
+
+		        // 我这里用jquery的不是因为需要jquery，只是jquery的语法看起来比较简单。大家都认识。
+		        // 如果你不是用jquery，可以看看原生的insertAdjacentHTML方法来替代append
+		        // $.ajax({
+		        //     type: 'GET',
+		        //     url: `http://rap.taobao.org/mockjsdata/14522/getgamelist?page=${page++}`,
+		        //     dataType: 'json',
+		        //     success: function(data){
+		        //         // contentDom其实就是你的scrollload-content类的dom
+		        //         $(sl.contentDom).append(data)
+
+		        //         // 处理完业务逻辑后必须要调用unlock
+		        //         sl.unLock()
+		        //     },
+		        //     error: function(xhr, type){
+		        //         // 加载出错，需要执行该方法。这样底部DOM会出现出现异常的样式。
+		        //         sl.throwException()
+		        //     }
+		        // })
+		    // 你也可以关闭下拉刷新
+		    // enablePullRefresh: true,
+		    // pullRefresh: function (sl) {
+		    //     $.ajax({
+		    //         type: 'GET',
+		    //         url: `http://rap.taobao.org/mockjsdata/14522/getgamelist?page=1`,
+		    //         dataType: 'json',
+		    //         success: function(data){
+		    //             $(sl.contentDom).prepend(data)
+
+		    //             // 处理完业务逻辑后必须要调用refreshComplete
+		    //             sl.refreshComplete()
+		    //         }
+		    //     })
+		    // }
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+body{
+    background-color: #fff;
+}
+.public-head{
+    height:1rem;
+    background: none;
+}
+.home-page-top{
+    min-height:4rem;
+    background: url("../img/home_page.png") center center no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover;
+}
+
+/*个人信息*/
+.home-info{
+    padding:0 0.5rem;
+}
+.home-info-header{
+    margin:0.15rem 0;
+    color: #fff;
+}
+.person-header{
+    width:1.1rem;
+    height:1.1rem;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    border:2px solid #fff;
+    overflow: hidden;
+    margin-right:0.16rem;
+}
+
+
+
+.home-info-other{
+    padding:0.2rem 0;
+    color: #fff;
+}
+.home-info-other .ask-info-item{
+    padding:0 0.15rem;
+    text-align: center;
+}
+.home-info-other .ask-info-item span{
+    display: block;
+
+}
+
+.home-info-btns a{
+    display: inline-block;
+    padding:0.1rem 0.32rem;
+    text-align: center;
+    margin:0 0 0 0.15rem;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border:1px solid #dcdcdc;
+    color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+
+/*tab*/
+
+.home-page-content .home-page-nav{
+    padding:0 0.24rem;
+    line-height:0.92rem;
+    height:0.92rem;
+    border-bottom:1px solid #dcdcdc;
+}
+.home-page-content .home-page-nav a{
+    width:50%;
+    text-align: center;
+}
+.home-page-content .home-page-nav a.active{
+    border-bottom:0.04rem solid #4f97fd;
+}
+
+.att-icon a{
+    width:0.4rem;
+    text-align: center;
+    color: #fff;
+    background-color: #24b5c9;
+    margin-right:0.15rem;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+
+.att-icon a i{
+    font-size:12px;
+}
+.att-icon a:nth-child(2){
+    background-color: #e26445;
+}
+.att-icon a:nth-child(3){
+    background-color: #43bf3e;
+}
+
+.home-info-header-name{
+    line-height:0.5rem;
+}
+.home-info-header-name .zc{
+    font-size:12px;
+    margin-left: 0.1rem;
+}
+.hos-adress{
+    line-height:0.5rem;
+    font-size:14px;
+}
+
+
+/*医生信息介绍*/
+.doctor-introduce{
+    padding:0 0.24rem;
+    border-bottom:0.15rem solid #f5f5f5;
+}
+.doctor-introduce .introduce-title{
+    padding:0.3rem 0 0.3rem 0.26rem;
+    position: relative;
+}
+.doctor-introduce .introduce-title:before{
+    content: '';
+    height:0.3rem;
+    border-left:0.04rem solid #4f97fd;
+    position: absolute;
+    left:0;
+    top:50%;
+    margin-top:-0.15rem;
+}
+.introduce-item{
+    padding:0 0.2rem 0.5rem;
+}
+.introduce-item h3{
+    height:0.46rem;
+}
+.introduce-item p{
+    font-size:14px;
+    line-height: 0.4rem;
+}

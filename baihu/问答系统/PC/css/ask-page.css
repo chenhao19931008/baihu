@@ -1,0 +1,275 @@
+.question-main{
+	padding-bottom: 100px;
+}
+.ask-title{
+	font-size: 16px;
+	color: #4c8cd9;
+	line-height: 30px;
+	font-weight: normal;
+}
+.ask-step .ask-step-title{
+	font-size: 14px;
+	color: #2d2d2d;
+	padding: 20px 0;
+	font-weight: normal;
+}
+.ask-step dl dt .must{
+	color: #919191;
+	
+}
+.ask-step dl dd {
+	padding-left: 25px;
+	border: 1px solid #dcdcdc;
+	
+	border-radius: 5px;
+}
+.ask-step dl dd input{
+	width: 100%;
+	height: 46px;
+	line-height: 46px;
+	border: none;
+	color: #919191;
+	font-family: "microsoft yahei";
+}
+.ask-step dl.ask-question-xq dd {
+	height: 222px;
+	border: 1px solid #dcdcdc;
+	border-radius: 5px;
+	padding: 15px;
+	
+}
+.ask-step dl.ask-question-xq dd textarea{
+	width: 100%;
+	height: 100%;
+	border: none;
+	font-size: 12px;
+	color: #919191;
+	font-family: "microsoft yahei";
+}
+/*选择标签*/
+.ask-step dl.choose-tips dd{
+	border: none;
+	padding: 0;
+	position: relative;
+}
+.ask-step dl.choose-tips dd .item{
+	display: inline-block;
+	width: 96px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	background: #eee;
+	color: #919191;
+	border-radius:20px;
+	cursor: pointer;
+	margin: 10px 16px 10px 0;
+	float: left;
+}
+.ask-step dl.choose-tips dd .item.active{
+	background: #2cc327;
+	color: #fff;
+}
+.ask-step dl.choose-tips dd .item.active{
+	background: #2cc327;
+	color: #fff;
+}
+.add-tips {
+	float: left;
+	position: relative;
+	margin: 10px 0;
+}
+
+.data-list{
+	width:200px;
+
+	height: 250px;
+	position: absolute;
+	top: 36px;
+	left:40px;
+	border: 1px solid #dcdcdc;
+	background: #fff;
+	display: none;
+	overflow-y: auto;
+}
+.data-list a{
+	display: block;
+	line-height: 30px;
+	text-align: center;
+}
+.data-list a:hover{
+	background: #f7f7f7;
+}
+.add-tips span{
+	
+	width: 34px;
+	height: 34px;
+	line-height: 30px;
+	text-align: center;
+	background: #eee;
+	color: #919191;
+	display: inline-block;
+	border-radius: 50%;
+	font-size: 30px;
+	cursor: pointer;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	transition: all 0.2s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+}
+.add-tips span.active{
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+}
+.ask-step .add-tips input{
+	left:40px;
+	top: 0;
+	width: 96px;
+	height: 32px;
+	background: #eee;
+	border: 1px solid #2cc327;
+	position: absolute;
+	border-radius: 30px;
+	font-family: "microsoft yahei";
+	text-align: center;
+	display: none;
+}
+
+
+/*照片上传*/
+.upload-box{
+	padding-bottom: 50px;
+}
+.upload-box .upload-btn{
+	width: 141px;
+	height: 140px;
+	background: url(../img/upload-bg.png) no-repeat;
+	position: relative;
+	overflow: hidden;
+
+}
+.upload-box .upload-btn input{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	opacity: 0;
+	-webkit-filter: Alpha(opacity=0);
+	filter: Alpha(opacity=0);
+}
+.upload-box .upload-dec{
+	line-height: 20px;
+	color: #919191;
+	padding: 30px 0 30px 23px;
+
+}
+
+.ssi-uploader{
+	padding-top: 20px;
+}
+/*填写用户信息*/
+.user-age{
+	padding-bottom: 50px;
+}
+.user-basic-box .ask-title,.reward-box .ask-title{
+	padding: 22px 0;
+}
+.user-basic-box dl{
+	line-height: 30px;
+	margin: 10px 0;
+	font-size: 14px;
+}
+.user-basic-box dl dt{
+	width: 100px;
+	
+	color: #2d22d;
+}
+.user-basic-box dl dd .sex-box{
+	padding: 0 16px;
+}
+.user-basic-box dl.user-age dd input{
+	width: 117px;
+	height: 30px;
+	border: 1px solid #dcdcdc;
+}
+.user-basic-box dl.user-age dd select{
+	width: 50px;
+	height: 30px;
+	border: 1px solid #dcdcdc;
+}
+/*悬赏*/
+.reward-inp{
+	line-height: 42px;
+}
+.reward-inp input{
+	width: 458px;
+	height: 40px;
+	border: 1px solid #dcdcdc;
+	border-radius: 5px;
+	margin-right: 26px;
+	padding-left: 10px;
+	color: #919191;
+}
+.message-notice{
+	padding: 26px 0;
+}
+
+/*提交问题*/
+.sub-ask{
+	padding: 60px 0;
+}
+.sub-ask button{
+	width: 242px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+	background: #2cc327;
+	border: none;
+	font-size: 16px;
+	font-family: "microsoft yahei";
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.chnage-line:hover{
+	color: #f00;
+}
+
+/*提交说明*/
+.recommend-box h2{
+	font-size: 16px;
+	color: #2d2d2d;
+	font-weight: normal;
+}
+.recommend-box p{
+	color: #919191;
+	line-height: 22px;
+	padding: 20px 0;
+}
+
+
+
+
+/*被提问人信息*/
+.be-asked{
+	padding: 20px 0;
+	border-bottom: 1px dashed #dcdcdc;
+	margin-bottom: 40px;
+}
+.be-asked .be-asked-pic{
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-right: 30px;
+}
+.be-asked .be-asked-text{
+	font-size: 18px;
+	color: #2d2d2d;
+	line-height: 64px;
+	max-width: 600px;
+}

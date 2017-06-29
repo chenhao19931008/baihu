@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>个人中心</title>
+    <!--rem布局-->
+    <script src="js/reset_font.js"></script>
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/person-center.css">
+</head>
+<body style="background: #fff;">
+<!--头部-->
+<div class="public-head m-flex-box">
+    <a href="javascript:;" class="back"><span class="back-icon"></span></a>
+    <h2 class="m-flex public-head-title">签到</h2>
+</div>
+<!--签到-->
+<div class="calendar-wrap">
+    <div id="calendar"></div>
+    <a href="javascript:;" class="signin" data-id="0">签到</a>
+</div>
+<div class="manifest">
+    <div class="manifest-top">
+        <div>
+            今日获得积分
+            <strong class="blue">4</strong>
+        </div>
+        <div>
+            当前积分
+            <strong class="blue">4</strong>
+        </div>
+    </div>
+
+    <dl>
+        <dt>签到规则</dt>
+        <dd>首次签到科获得4个积分奖励</dd>
+        <dd>连续签到每天增加2个积分奖励</dd>
+        <dd>连续签到10天以上每天获得16个积分奖励</dd>
+    </dl>
+</div>
+</body>
+</html>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="plug/layer_mobile/layer.js"></script>
+<script src="js/qiandao.js"></script>
+<script>
+    var signList=[{"signDay":"25"},{"signDay":"11"},{"signDay":"12"},{"signDay":"13"}];//已签到数据
+
+    calUtil.init(signList);//初始化日历
+
+    $('.signin').on('click',function(){
+        var dataId = $(this).attr('data-id');
+        if(dataId=="0"){
+            $(this).attr('data-id',"1");
+            layer.open({
+                skin:"msg",
+                content:"签到成功",
+                time:0.5
+            });
+            $(this).addClass('active').html("已签到");//已签到样式
+
+            var date = new Date();
+
+            var day = date.getDate();
+
+            //签到
+            //ajax获取日历json数据
+
+            signList.push({"signDay":day});//添加签到日期到数据中
+
+            calUtil.init(signList);//初始化
+        }else{
+            layer.open({
+                skin:"msg",
+                content:"你已经签过到了",
+                time:0.5
+            });
+        }
+
+
+
+    });
+</script>

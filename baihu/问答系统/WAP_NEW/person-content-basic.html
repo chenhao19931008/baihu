@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>个人中心-基本资料</title>
+    <!--rem布局-->
+    <script src="js/reset_font.js"></script>
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/person-center.css">
+</head>
+<body style="background: #fff;">
+<!--头部-->
+<div class="public-head m-flex-box">
+    <a href="javascript:;" class="back"><span class="back-icon"></span></a>
+    <h2 class="m-flex public-head-title">基本资料</h2>
+    <a href="javascript:;" class="public-right-btn"><span class="save-btn">保存</span></a>
+</div>
+<!--基本资料-->
+<div class="person-content-basic">
+    <ul class="basic-list">
+        <li class="m-flex-box">
+            <span class="type-name">昵称</span>
+            <div class="m-flex">
+                <input type="text" placeholder="请输入姓名" class="nc-inp">
+            </div>
+        </li>
+        <li class="m-flex-box sex-box">
+            <span class="type-name">昵称</span>
+            <div class="m-flex sex-box-content">
+                <span  class="sex-show-text blue">女</span>
+            </div>
+        </li>
+        <li class="m-flex-box birthday-box">
+            <span class="type-name">出生日期</span>
+            <div class="m-flex">
+                <input type="text" placeholder="请输入出生日期" readonly id="birthday">
+            </div>
+        </li>
+        <li class="m-flex-box upload-pic-box">
+            <span class="type-name">上传头像</span>
+            <div class="m-flex m-flex-box">
+                <div class="img-show" id="show-head">
+
+                </div>
+                <a href="javascript:;" class="upload-btn"><input type="file" id="fileLoad"></a>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+<!--sex-->
+
+<!--<div class="sex-choose-modal">-->
+    <!--<div class="sex-choose-down">-->
+        <!--<h2>性别</h2>-->
+        <!--<ul class="sex-choose-down-list">-->
+            <!--<li class="m-flex-box" data-id="0">-->
+                <!--<span class="m-flex">男</span>-->
+                <!--<b class=""></b>-->
+            <!--</li>-->
+            <!--<li class="m-flex-box" data-id="1">-->
+                <!--<span class="m-flex">女</span>-->
+                <!--<b></b>-->
+            <!--</li>-->
+        <!--</ul>-->
+    <!--</div>-->
+<!--</div>-->
+
+
+<!--end-->
+</body>
+</html>
+<script src="js/jquery-1.11.2.min.js"></script>
+<!--birthday-->
+<link rel="stylesheet" href="plug/birthday/css/LCalendar.css">
+<script src="plug/birthday/js/LCalendar.min.js"></script>
+<!--end -->
+<script src="plug/layer_mobile/layer.js"></script>
+<script src="js/main.js"></script>
+<script>
+
+    //选择昵称
+
+    $('.sex-box').on('click',function(){
+        sex_box();
+
+    });
+
+    function sex_box(){
+        var arr = ['<div class="sex-choose-modal">',
+                        '<div class="sex-choose-down">',
+                            ' <h2>性别</h2>',
+                            '<ul class="sex-choose-down-list">',
+                                ' <li class="m-flex-box" data-id="0">',
+                                ' <span class="m-flex">男</span>',
+                                ' <b class=""></b>',
+                                '</li>',
+                                ' <li class="m-flex-box" data-id="1">',
+                                ' <span class="m-flex">女</span>',
+                                '<b></b>',
+                                '</li>',
+                            '</ul>',
+                        '</div>',
+                    '</div>'
+
+                  ];
+
+            var str = arr.join('');
+
+            $('body').append(str);
+
+            $('.sex-choose-modal').on('click',function(ev){
+
+                    var tar = ev.target;
+                    var tarName = tar.className;
+
+                    switch(tarName){
+                        case 'sex-choose-modal':
+                            $('.sex-choose-modal').remove();
+                            break;
+
+                    }
+
+            });
+
+
+            $('.sex-choose-down-list li').each(function(index,el){
+                $(el).on('click',function(){
+                    var dataId = $(this).attr('data-id');
+                    $(this).find('b').addClass('active');
+                    $(this).siblings().find('b').removeClass('active');
+
+                    if(dataId=="0"){
+                        $('.sex-show-text').text('男');
+
+                        $('.sex-choose-modal').remove();
+                    }else if(dataId=="1"){
+                        $('.sex-show-text').text('女');
+
+                        $('.sex-choose-modal').remove();
+                    }
+                });
+            });
+
+
+
+
+    }
+
+
+
+    //生日选择
+    var calendar = new LCalendar();
+    calendar.init({
+        'trigger': '#birthday', //标签id
+        'type': 'date', //date 调出日期选择 datetime 调出日期时间选择 time 调出时间选择 ym 调出年月选择,
+        'minDate': '1900-1-1', //最小日期
+        'maxDate': new Date().getFullYear() + '-' + (new Date().getMonth() + 1) + '-' + new Date().getDate() //最大日期
+    });
+
+    //上传头像
+
+    $('#fileLoad').change(function() {
+        var filepath = $('#fileLoad').val();
+        var files = $('#fileLoad').get(0).files;
+
+        for (var i = 0; i < files.length; i++) {
+            //          objUrl = getObjectURL(files[i]);
+
+            var extStart = filepath.lastIndexOf(".");
+            var ext = filepath.substring(extStart, filepath.length).toUpperCase();
+            /*
+
+             描述：鉴定每个图片上传尾椎限制
+             * */
+            if (ext != ".BMP" && ext != ".PNG" && ext != ".GIF" && ext != ".JPG" && ext != ".JPEG") {
+                layer.open({
+                    content: '文件必须为图片',
+                    btn: '我知道了'
+                });
+                this.value = "";
+
+                return false;
+            }
+        }
+        $.each(files, function(index, item) {
+            var src = getObjectURL(item);
+            var str = "<img src='"+src+"' />"
+            $('#show-head').empty().append(str);
+        });
+
+
+
+
+    });
+
+
+
+
+
+</script>

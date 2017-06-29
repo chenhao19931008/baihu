@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <link rel="stylesheet" href="font/iconfont.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/login.css" />
+</head>
+<body>
+
+<div class="login-main container register-main">
+    <div class="login-in">
+        <div class="login-logo">
+            <a href="javascript:;">
+                <h1><img src="img/logo.png" alt="" /></h1>
+            </a>
+        </div>
+        <!--登录框-->
+        <div class="login-box">
+            <div class="login-box-left">
+                <div class="reg-box-left-t">
+                    <h2>用户注册</h2>
+                    <form action="#">
+                        <div class="reg-step">
+                            <dl class="clearfix ">
+                                <dt class="left">手机号码</dt>
+                                <dd class="left"><input type="text" placeholder="请输入手机号" id="reg_phone"/></dd>
+                            </dl>
+                        </div>
+                        <div class="reg-step">
+                            <dl class="clearfix ">
+                                <dt class="left">密码</dt>
+                                <dd class="left"><input type="password" placeholder="请输入密码" id="reg_pass"/></dd>
+                            </dl>
+                        </div>
+                        <div class="reg-step">
+                            <dl class="clearfix ">
+                                <dt class="left">确认密码</dt>
+                                <dd class="left"><input type="password" placeholder="请再次输入密码" id="reg_pass_again"/></dd>
+                            </dl>
+                        </div>
+                        <div class="reg-step">
+                            <dl class="clearfix reg-code-box">
+                                <dt class="left">验证码</dt>
+                                <dd class="left">
+                                    <input type="text" placeholder="请输入验证码" class="code" id="reg_code"/>
+                                    <input type="button" value="获取验证码" class="send-code" id="send-code">
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="xieyi">
+                            <div class="js-checkbox" id="focus"></div>
+                            <label for="focus">
+
+                                我已阅读并同意遵守 <a href="javascript:;">《 白狐医疗问答协议 》</a>
+                            </label>
+                        </div>
+                        <input type="button" value="注册" class="login-btn lv_sub_btn_reg"/>
+                    </form>
+                </div>
+                <!--第三方登录-->
+                <div class="login-box-left-b">
+                    <p>第三方合作账号登录</p>
+                    <div class="other-login-btn">
+                        <a href="javascript:;" class="weixin"><i class="iconfont icon-iconfontweixin"></i></a>
+                        <a href="javascript:;" class="qq"><i class="iconfont icon-QQ"></i></a>
+                        <a href="javascript:;" class="weibo"><i class="iconfont icon-zliconweibo01"></i></a>
+                    </div>
+                    <div>已有账号<a href="login.html" class="blue">立即登录》</a></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="plug/layer/layer.js"></script>
+<script src="js/register_login.js"></script>

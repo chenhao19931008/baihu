@@ -1,0 +1,180 @@
+body{
+		
+	background: #bcd4f0;
+}
+.login-main{
+	padding-top:110px;	
+}
+.login-in{
+	
+	margin:  0 112px;
+}
+.login-logo{
+	
+	width: 156px;
+	height: 50px;
+	margin: 36px 0;
+}
+
+.login-box{
+	width: 944px;
+	min-height: 505px;
+	overflow: hidden;
+	background: #fff url(../img/login/bg.png) right top no-repeat;
+}
+
+.login-box-left{
+	
+	width: 500px;
+	padding-left: 20px;
+}
+.login-box-left-t{
+	padding: 0 76px;
+	border-bottom: 1px solid #dcdcdc;
+}
+.login-box-left-t h2,.reg-box-left-t h2{
+	
+	text-align: center;
+	font-size: 18px;
+	color: #2d2d2d;
+	font-weight: normal;
+	padding: 28px 0 50px;
+}
+
+.login-step dl{
+	border-radius: 30px;
+	height: 50px;
+	border: 1px solid #dcdcdc;
+	margin-bottom: 10px;
+	overflow: hidden;
+	-webkit-transition: box-shadow 0.3s ;
+	-moz-transition: box-shadow 0.3s;
+	-ms-transition: box-shadow 0.3s ;
+	-o-transition: box-shadow 0.3s ;
+	transition: box-shadow 0.3s ;
+	
+}
+.login-step dl.active{
+	
+	border: 1px solid #fcc670;
+	-webkit-box-shadow: 0 0 20px rgba(0,0,0,.1);
+	box-shadow: 0 0 20px rgba(0,0,0,.1);
+}
+.login-step dl dt{
+	
+	width: 67px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+.login-step dl input{
+	
+	width: 273px;
+	height: 50px;
+	border: none;
+	font-size: 14px;
+	font-family: "microsoft yahei";
+}
+.forget{
+	font-size: 14px;
+	padding: 6px 0;
+	color: #2d2d2d;
+}
+
+.login-box-left-t .login-btn,.reg-box-left-t .login-btn{
+	width: 270px;
+	height: 53px;
+	line-height: 53px;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	font-family: "microsoft yahei";
+	background: url(../img/login/btn-bg.png) no-repeat;
+	border: none;
+	cursor: pointer;
+	display: block;
+	margin: 20px auto;
+	
+}
+/*第三方*/
+.login-box-left-b{
+	font-size:14px;
+	text-align: center;
+	line-height:28px;
+	padding:10px 0 30px 0;
+}
+.other-login-btn{
+	padding:10px 0;
+}
+.other-login-btn a{
+	padding:0 20px;
+}
+.other-login-btn a i{
+	font-size:20px;
+}
+.other-login-btn a.weixin{
+	color: #81cb3d;
+}
+.other-login-btn a.qq{
+	color: #2693ff;
+}
+.other-login-btn a.weibo{
+	color: #f04747;
+}
+
+/*注册*/
+.register-main{
+	padding-top:70px;
+}
+.reg-box-left-t{
+	padding:0 36px;
+	border-bottom:1px solid #dcdcdc;
+}
+.reg-step dl{
+	line-height:46px;
+	font-size:16px;
+	margin-bottom:18px;
+}
+.reg-step dl dt{
+	width:66px;
+	text-align: right;
+	padding-right:16px;
+
+}
+.reg-step dl dd input{
+	padding-left:25px;
+	width:300px;
+	height:46px;
+	line-height:46px;
+	border:1px solid #dcdcdc;
+	font-family: "Microsoft YaHei UI";
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+}
+.xieyi{
+	text-align: center;
+	font-size:14px;
+	color: #2d2d2d;
+}
+.reg-step .reg-code-box dd input.code{
+	width:178px;
+}
+.reg-step .reg-code-box dd input.send-code{
+	width:118px;
+	height:48px;
+	line-height:48px;
+	border:none;
+	background: #5cc18b;
+	color: #fff;
+	font-size:18px;
+	font-family:"microsoft yahei";
+	text-align: center;
+	padding:0;
+	cursor: pointer;
+}
+
+.reg-step .reg-code-box dd input.send-code.active{
+	background: #ccc;
+	cursor: no-drop;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<script src="../assets/js/jquery-1.11.1.js"></script>
+	<!--<![endif]-->
+	<script src="../assets/js/amazeui.min.js"></script>
+	<script src="../assets/js/app.js"></script>
+	<script type="text/javascript" src="../js/style.js"></script>
+	<script src="../js/jquery.star-rating-svg.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/star-rating-svg.css">
+	<link rel="stylesheet" href="../isscroll/two.css">
+	<link rel="stylesheet" href="../assets/css/amazeui.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body style="padding-bottom: 1.5rem">
+<nav class="top_nav" style="background-image: url(../img/bg.png);">
+	<div class="dq_bac">
+		<a href="javascript:" onclick="self.location=document.referrer;">
+			<img class="dq_back" src="../img/back.png">
+		</a>
+	</div>
+	<ul class="top_user_ul">
+		<li>
+			<a href="">
+				<img class="top_user_img" src="../img/people.png">
+			</a>
+			<span class="top_user_name">天狼星</span>
+		</li><!-- 
+		 --><li>
+			<a href="">
+				<dl>
+					<dt>8</dt>
+					<dd>关注</dd>
+				</dl>
+			</a>
+		</li><!-- 
+		 --><li>
+			<a href="">
+				<dl>
+					<dt>13</dt>
+					<dd>粉丝</dd>
+				</dl>
+			</a>
+		</li><!-- 
+		 --><li>
+			<a href="">
+				<dl>
+					<dt>6</dt>
+					<dd>收藏</dd>
+				</dl>
+			</a>
+		</li>
+	</ul>
+	<ul class="top_gz_sx">
+		<li>
+		</li>
+		<li class="">
+		</li>
+		<li class="">
+		</li>
+		<li class="">
+			<a href="" class="top_button top_gz">
+				关注
+			</a>
+		</li>
+		<li class="">
+			<a href="" class="top_button top_gz">
+				私信
+			</a>
+		</li>
+	</ul>
+</nav>
+<section class="top_tab">
+	<ul class="am-avg-sm-2">
+		<li class="top_tab_li top_cp">TA的菜谱</li>
+		<li class="top_tab_li top_ht">TA的话题</li>
+	</ul>
+	<div class="top_line1"></div>
+</section>
+<section class="ht_sec">
+	<div class="ht_detail">
+		<h4 class="ht_tit">
+			粗茶淡饭才是老年人长寿“药方”
+		</h4>
+		<p class="ht_from">
+			<span class="ht_from_where">来自圈子：</span>
+			<span class="ht_from_name">轻食代</span>
+		</p>
+		<div class="ht_content">
+			<p>
+				很多老人因为自己的饮食不平衡出现这样那样的疾病状态，那么我们该怎么样合理安排我们的饮食呢？有哪些药膳是能够帮助我们长寿的？
+			</p>
+		</div>
+		<p class="ht_gray_small">
+			<span>72点赞</span>
+			<span class="ht_count">6评论</span>
+			<span class="ht_time_year">2017-03-23</span>
+			<span class="ht_time">17:20</span>
+		</p>
+	</div>
+	<div class="ht_detail">
+		<h4 class="ht_tit">
+			营养不上火~~~苦菊奶芙沙拉
+		</h4>
+		<p class="ht_from">
+			<span class="ht_from_where">来自圈子：</span>
+			<span class="ht_from_name">轻时代</span>
+		</p>
+		<div class="ht_content">
+			<p>
+				女人爱臭美，路人皆知！美也美的自然，美的健康！所以我更希望能通过合理膳食，才实现健康美~~~
+			</p>
+			<img src="../img/big.png"><!-- 
+			 --><img src="../img/big.png"><!-- 
+			 --><img src="../img/big.png">
+		</div>
+		<p class="ht_gray_small">
+			<span>72点赞</span>
+			<span class="ht_count">6评论</span>
+			<span class="ht_time_year">2017-03-23</span>
+			<span class="ht_time">17:20</span>
+		</p>
+	</div>
+</section>
+<div class="end">
+	<p class="end_text">END</p>
+</div>
+<script src="../isscroll/Scrollload.js"></script>
+<script type="text/javascript">
+	var count = 1
+	new Scrollload(document.querySelector('body'),function(sl) {
+	    	setTimeout(function () {
+            if (count++ < 6) {
+                $('.ht_sec').append("0");
+                sl.unLock();
+            } else {
+                sl.noData();
+            }
+        }, 500);
+
+	        // 我这里用jquery的不是因为需要jquery，只是jquery的语法看起来比较简单。大家都认识。
+	        // 如果你不是用jquery，可以看看原生的insertAdjacentHTML方法来替代append
+	        // $.ajax({
+	        //     type: 'GET',
+	        //     url: `http://rap.taobao.org/mockjsdata/14522/getgamelist?page=${page++}`,
+	        //     dataType: 'json',
+	        //     success: function(data){
+	        //         // contentDom其实就是你的scrollload-content类的dom
+	        //         $(sl.contentDom).append(data)
+
+	        //         // 处理完业务逻辑后必须要调用unlock
+	        //         sl.unLock()
+	        //     },
+	        //     error: function(xhr, type){
+	        //         // 加载出错，需要执行该方法。这样底部DOM会出现出现异常的样式。
+	        //         sl.throwException()
+	        //     }
+	        // })
+	    // 你也可以关闭下拉刷新
+	    // enablePullRefresh: true,
+	    // pullRefresh: function (sl) {
+	    //     $.ajax({
+	    //         type: 'GET',
+	    //         url: `http://rap.taobao.org/mockjsdata/14522/getgamelist?page=1`,
+	    //         dataType: 'json',
+	    //         success: function(data){
+	    //             $(sl.contentDom).prepend(data)
+
+	    //             // 处理完业务逻辑后必须要调用refreshComplete
+	    //             sl.refreshComplete()
+	    //         }
+	    //     })
+	    // }
+	})
+</script>
+</body>
+</html>

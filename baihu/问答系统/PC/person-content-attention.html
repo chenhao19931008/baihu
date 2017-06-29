@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="font/iconfont.css" />
+    <link rel="stylesheet" href="plug/cropper/css/cropper.min.css">
+    <link rel="stylesheet" href="plug/cropper/css/main.css">
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/doctor-list.css">
+    <!--个人中心-->
+    <link rel="stylesheet" href="css/person-content.css">
+</head>
+<body>
+
+<!--头部信息-->
+<div class="head-wrap">
+    <div class="container head clearfix">
+        <div class="left head-l">
+            <span>你好，欢迎来到白狐医疗问答系统</span>
+            <span class="hot-line"><i class="iconfont icon-dianhua1"></i>客服热线    &nbsp;&nbsp;  400-622-2976</span>
+        </div>
+        <div class="right head-r" >
+            <ul class="head-r-list clearfix">
+
+                <li><a href="javascript:;" class="blue">登录</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="javascript:;" class="blue">注册</a></li>
+            </ul>
+            <div class="current logined clearfix head-r-list">
+                <a href="javascript:;" class="left signin" id="js-just-qiandao">签到</a>
+                <a href="javascript:;" class="left message">
+                    <i class="iconfont icon-2kaoshikouyutilabaicon"></i>消息
+                    <span class="message-icon">9</span>
+                </a>
+                <div class="right menu-list-wrap">
+                    <a href="javascript:;" class="user-pic"><img src="img/head.png" alt=""></a>
+                    <ul class="menu-list">
+                        <li><a href="javascript:;" class="font-sl">积分 <span class="yellow">99</span></a></li>
+                        <li><a href="javascript:;">我的主页</a></li>
+                        <li><a href="javascript:;">我的关注</a></li>
+                        <li><a href="javascript:;">我的提问</a></li>
+                        <li><a href="javascript:;">退出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--个人中心-->
+<div class="person-content">
+    <!--头部-->
+    <div class="person-content-top">
+        <div class="container person-content-top-in">
+            <a href="javascript:;" class="left logo"><img src="img/center/logo.png" alt=""></a>
+            <div class="person-content-search right">
+                <form action="#">
+                    <div class="person-content-search-in">
+                        <input type="text" class="search-inp">
+                        <button class="search-btn"><i class="iconfont icon-sousuo"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--内容区域-->
+    <div class="container person-content-main clearfix">
+        <div class="left person-content-main-l">
+            <ul class="nav-list">
+                <li><a href="person-content.html"> <i class="icon person-icon"></i>个人中心</a></li>
+                <li><a href="person-content-basicinfo.html" ><i class="icon basic-icon"></i>基本资料</a></li>
+                <li><a href="person-content-attention.html"  class="active"><i class="icon att-icon"></i>我的关注</a></li>
+                <li><a href="person-answer.html"><i class="icon ask-icon"></i>我的回答</a></li>
+                <li><a href="person-message.html"><i class="icon message-icon"></i>我的消息</a></li>
+                <li><a href="person-bind.html"><i class="icon zh-icon"></i>账号绑定</a></li>
+                <li><a href="person-change-pass.html"><i class="icon pass-icon"></i>修改密码</a></li>
+                <li><a href="person-wallet.html"><i class="icon qb-icon"></i>我的钱包</a></li>
+            </ul>
+        </div>
+        <!--右侧-->
+        <div class="right person-content-main-r">
+            <div class="person-content-basic">
+                <div class="person-content-basic-title">
+                    <a href="javascript:;">我的关注</a>
+
+                </div>
+                <div class="person-attention-box">
+                    <!--没有数据的时候显示-->
+                    <div class="no-data" style="display: none">
+                        <img src="img/center/no_num.png" alt="">
+                        <p>没有任何数据</p>
+                    </div>
+                    <div  class="person-attention-in">
+                        <ul class="expert-online-content-list clearfix" >
+                            <li>
+                                <div class="expert-online-content-in">
+                                    <span class="online-title">在线</span>
+                                    <div class="expert-pic">
+                                        <span class="dot-left-top pic-dot"></span>
+                                        <span class="dot-left-bottom pic-dot"></span>
+                                        <span class="dot-right-top pic-dot"></span>
+                                        <span class="dot-right-bottom pic-dot"></span>
+                                        <a href="javascript:;">
+                                            <img src="img/doc01.png" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="expert-info-box">
+                                        <a href="javascript:;">
+                                            <div class="expert-info-name clearfix">
+                                                <span class="doc-name">李爱华</span>
+                                                <span class="doc-zc"> 主任医师</span>
+                                            </div>
+                                        </a>
+                                        <p class="expert-info-zc font-sl">高血压冠心病权威专家</p>
+                                        <div class="expert-ask clearfix">
+                                            <a href="javascript:;" class="attentioned">已关注</a>
+                                            <a href="javascript:;">向TA提问</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="expert-online-content-in">
+                                    <span class="online-title">在线</span>
+                                    <div class="expert-pic">
+                                        <span class="dot-left-top pic-dot"></span>
+                                        <span class="dot-left-bottom pic-dot"></span>
+                                        <span class="dot-right-top pic-dot"></span>
+                                        <span class="dot-right-bottom pic-dot"></span>
+                                        <a href="javascript:;">
+                                            <img src="img/doc02.png" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="expert-info-box">
+                                        <a href="javascript:;">
+                                            <div class="expert-info-name clearfix">
+                                                <span class="doc-name">李爱华</span>
+                                                <span class="doc-zc"> 主任医师</span>
+                                            </div>
+                                        </a>
+                                        <p class="expert-info-zc font-sl">高血压冠心病权威专家</p>
+                                        <div class="expert-ask clearfix">
+                                            <a href="javascript:;" class="attentioned">已关注</a>
+                                            <a href="javascript:;">向TA提问</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="expert-online-content-in">
+                                    <div class="expert-pic">
+                                        <span class="dot-left-top pic-dot"></span>
+                                        <span class="dot-left-bottom pic-dot"></span>
+                                        <span class="dot-right-top pic-dot"></span>
+                                        <span class="dot-right-bottom pic-dot"></span>
+                                        <a href="javascript:;">
+                                            <img src="img/doc03.png" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="expert-info-box">
+                                        <a href="javascript:;">
+                                            <div class="expert-info-name clearfix">
+                                                <span class="doc-name">李爱华</span>
+                                                <span class="doc-zc"> 主任医师</span>
+                                            </div>
+                                        </a>
+                                        <p class="expert-info-zc font-sl">高血压冠心病权威专家</p>
+                                        <div class="expert-ask clearfix">
+                                            <a href="javascript:;" class="attentioned">已关注</a>
+                                            <a href="javascript:;">向TA提问</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <div class="page-wrap">
+                            <div>
+                                <span class="totle-page">共8页</span>
+                                <a class="prev" href="javascript:;">上一页</a>
+                                <a class="num" href="javascript:;">1</a>
+                                <span class="current">2</span>
+                                <a class="num" href="javascript:;">3</a>
+                                <a class="num" href="javascript:;">4</a>
+                                <a class="next" href="javascript:;">下一页</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<div class="data-picker-wrap">
+    <div class="data-picker-in">
+        <span class="data-close"><i class="iconfont icon-guanbi"></i></span>
+        <div class="data-top">
+            <p>已连续签到 <strong class="blue">2</strong> 天</p>
+        </div>
+        <div class="claeafix data-bot">
+            <div id="data-picker" class="left">
+                <div style="width:320px;" id="calendar"></div>
+            </div>
+            <div class="left data-bot-right">
+                <p>今日获得积分 <span class="blue"> 4</span></p>
+                <p>当前积分 <span class="blue"> 4</span></p>
+                <dl class="">
+                    <dt>签到规则</dt>
+                    <dd>首次签到科获得4个积分奖励</dd>
+                    <dd>连续签到每天增加2个积分奖励</dd>
+                    <dd>连续签到10天以上每天获得16个
+                        积分奖励</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--footer-->
+<div class="footer">
+    <div class="container">
+        <div class="footer-top clearfix">
+            <a href="javascript:;">首页</a>
+            <a href="javascript:;">公司简介</a>
+            <a href="javascript:;">在线帮助</a>
+            <a href="javascript:;">渠道招商</a>
+            <a href="javascript:;">定制服务</a>
+            <a href="javascript:;" class="border-right-none">升级计划</a>
+        </div>
+        <div class="footer-bot">
+            <p>Copyright 2010-2015 All Rights Reserved. 苏ICP备123123123号-1（苏）医广[2012]第12-17-659号 苏卫网审（2011）174号</p>
+            <p>全国统一客服电话：400-622-2972</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="plug/layer/laydate/laydate.js"></script>
+<script src="plug/cropper/js/cropper.min.js"></script>
+<script src="plug/cropper/js/main.js"></script>
+<script src="js/globle.js"></script>
+<script src="js/qiandao.js"></script>
+<script>
+
+    $('#avatarInput').change(function () {
+        $('#crop-content').show();
+        $("#headerimg").hide();
+
+    });
+
+    //日历
+
+    $('.signin').on('click',function(){
+
+        $('.data-picker-wrap').addClass('active');
+
+        var date = new Date();
+
+        var day = date.getDate();
+
+
+        //签到
+        //ajax获取日历json数据
+        var signList=[{"signDay":"25"},{"signDay":"11"},{"signDay":"12"},{"signDay":"13"}];//已签到数据
+        signList.push({"signDay":day});
+        calUtil.init(signList);
+    });
+
+
+    $('.data-close').on('click',function(){
+
+        $('.data-picker-wrap').removeClass('active');
+
+    });
+
+
+
+
+
+</script>
+

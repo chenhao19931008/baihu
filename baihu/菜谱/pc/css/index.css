@@ -1,0 +1,286 @@
+/*主内容*/
+#lv_main{
+    position: relative;
+    clear: both;
+    min-width: 1200px;
+}
+.lv__main_container {
+    width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    zoom: 1;
+    overflow: hidden;
+}
+.lv__main_container>div {
+    margin: 30px 0;
+}
+.food-title-box {
+    margin: 15px 0;
+    height: 46px;
+    line-height: 46px;
+}
+.food-title, .recipes-title, .greens-title, .specal-title  {
+    background-image: url("../images/font-model.png");
+    width: 380px;
+    height: 23px;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-left: -30px;
+}
+.food-title {
+    background-position: 0 0;
+}
+.recipes-title {
+    background-position: 0 -25px;
+}
+.greens-title {
+    background-position: 0 -48px;
+}
+.specal-title {
+    background-position: 0 -71.5px;
+}
+.foot-title-font {
+    background-image: url("../images/tnkl.png");
+    background-size: 100%;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.food-contain-menu {
+    width: 932px;
+}
+.food-container {
+    height: 491px;
+    width: 100%;
+    display: flex;
+}
+.food-contain-left {
+    width: 265px;
+    height: 99%;
+    position: relative;
+}
+.food-contain-left a.more {
+    position: absolute;
+    bottom: 50px;
+    left: 38%;
+    font-size: 15px;
+    color: #bbce00;
+}
+.food-contain-box li {
+    float: left;
+    width: 25%;
+    height: 50%;
+}
+.food-contain-box li .food-list {
+    width: 225px;
+    height: 240px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    transition: all 0.3s ;
+    -moz-transition: all 0.3s ;	/* Firefox 4 */
+    -webkit-transition: all 0.3s;	/* Safari 和 Chrome */
+    -o-transition: all 0.3s ;	/* Opera */
+
+}
+.food-contain-box li a img {
+    width: 100%;
+    height: 176px;
+}
+.food-contain-box li a h1 {
+    font-size: 16px;
+    margin-top: 8px;
+}
+.food-contain-box li span ,.food-contain-box li span a{
+    color: #989898;
+}
+
+.food-list-font {
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+
+/*广告*/
+.eat-advent {
+    width: 100%;
+    height: 150px;
+    margin: 60px 0;
+}
+
+
+
+.well-recipes .food-contain-menu {
+    width: 100%;
+}
+.well-recipes .food-container {
+    height: 730px;
+}
+.well-recipes .food-contain-box li .food-list {
+    width: 284px;
+    height: 330px;
+}
+.well-recipes .food-contain-box li a img  {
+    height: 253px;
+}
+
+
+
+.well-greens {
+    border-top: 1px solid #dcdcdc;
+}
+.well-greens .food-container {
+    height: auto;
+}
+.well-greens .food-contain-menu {
+    width: 100%;
+    margin-top: 20px;
+}
+.well-greens .food-contain-box li {
+    width: 170px;
+    height: 200px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.well-greens .food-contain-box li .food-list {
+    width: 137px;
+    height: 100%;
+    padding: 10px;
+}
+.well-greens .food-contain-box li a img  {
+    height: 113px;
+}
+.well-greens .food-contain-box li span {
+    display: block;
+}
+.well-greens .fond-list-xiang {
+    margin-top: 15px;
+}
+.well-greens .food-contain-box li span.greens-name {
+    font-size: 15px;
+    color: #2d2d2d;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+.food-specal {
+    border-top: 1px solid #dcdcdc;
+}
+.food-specal .food-container {
+    height: auto;
+}
+.food-specal .food-contain-menu {
+    width: 100%;
+    margin-top: 20px;
+}
+.food-specal .food-contain-box ul {
+    height: 390px;
+    width: 3600px;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    transition: left 0.5s;
+    -moz-transition: left 0.5s; /* Firefox 4 */
+    -webkit-transition: left 0.5s; /* Safari 和 Chrome */
+    -o-transition: left 0.5s; /* Opera */
+}
+.food-specal .food-contain-box ul li {
+    width: 400px;
+    height: 370px;
+}
+.food-specal .food-contain-box ul li .food-list {
+    width: 386px;
+    height: 100%;
+    margin-left: 0;
+    border: 1px solid #dcdcdc;
+}
+.food-specal .food-contain-box ul li a img  {
+    height: 230px;
+    width: 386px;
+}
+.specal-list-text {
+    padding: 20px;
+}
+.specal-list-text a {
+    font-size: 16px;
+    color: #2d2d2d;
+}
+.specal-list-text p {
+    font-size: 12px;
+    color: #989898;
+    margin-top: 7px;
+}
+
+
+.food-title-right {
+    margin-right: 12px;
+}
+
+.food-title-right a {
+    display: inline-block;
+    font-size: 14px;
+    width: 48px;
+    height: 22px;
+    border-radius: 20px;
+    line-height: 22px;
+    text-align: center;
+    margin-left: 5px;
+    color: #2d2d2d;
+}
+.food-title-right a.active {
+    background-color: #f6aa00;
+    color: #fff;
+}
+.food-more a {
+    color: #989898;
+    font-size: 16px;
+}
+.food-more a:hover {
+    color: #f6aa00;
+}
+.food-contain-left .more:hover {
+    color: #f6aa00;
+}
+
+
+
+.comment-pi {
+    margin-top: 5px;
+    line-height: 16px;
+}
+.comment-cout {
+    color: #f6aa00 !important;
+}
+.comment-pi span.right {
+    font-size: 12px;
+    font-weight: 500;
+}
+.stars img {
+    width: 16px;
+    height: 16px;
+    float: left;
+}
+.food-list-dot {
+    margin: 10px auto 0;
+    height: 10px;
+    width: 160px;
+}
+.food-list-dot li {
+    width: 30px;
+    height: 6px;
+    border: 1px solid #dcdcdc;
+    border-radius: 15px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: width 2s;
+    -moz-transition: width 2s; /* Firefox 4 */
+    -webkit-transition: width 2s; /* Safari 和 Chrome */
+    -o-transition: width 2s; /* Opera */
+}
+.food-list-dot li.current {
+    background-color: #f6aa00;
+}

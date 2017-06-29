@@ -1,0 +1,326 @@
+.header_box{
+    padding:33px 0 24px 0;
+    line-height:48px;
+    background: #fff;
+}
+
+.header_box .header_l .header_logo{
+    width:160px;
+    height:48px;
+}
+.header_box .header_l .header_logo img{
+    width:100%;
+    height:100%;
+    display: block;
+}
+.header_box .header_l .header_l_title{
+    font-size:18px;
+    font-weight:normal;
+    margin-left:32px;
+    padding-left:24px;
+    border-left:1px solid #e5e5e5;
+}
+.header_r{
+    font-size:16px;
+    color: #919191;
+}
+.header_r .go_reg{
+    color: #2987e6;
+}
+
+/*登录*/
+.login_box{
+    height:705px;
+    position: relative;
+    min-width:1200px;
+    background-color: #2987e6;
+}
+.login_box .login_in{
+    position: relative;
+    height:705px;
+}
+.login_box .login_in .login_in_pic{
+    width:636px;
+    height:636px;
+    position: absolute;
+    bottom:50%;
+    left:0;
+    margin-bottom:-318px;
+}
+.login_form{
+    width:338px;
+    height:437px;
+    position: absolute;
+    right:0;
+    top:50%;
+    margin-top:-218px;
+    background-color: #fff;
+    padding:0 18px;
+
+}
+.login_form .login_title{
+    line-height:54px;
+    border-bottom:1px solid #dcdcdc;
+    font-size:24px;
+    font-weight:normal;
+    text-align: center;
+}
+.login_form .login_form_in{
+    padding:26px 29px 0;
+}
+.login_form .login_form_in .login_form_item{
+    margin-bottom:10px;
+}
+.login_form .login_form_in .login_form_item input{
+    width:258px;
+    height:42px;
+    line-height:42px;
+    padding:0 0 0 20px;
+    border:1px solid #dcdcdc;
+    font-size:16px;
+}
+.login_form .login_form_in .handle_btn{
+    padding:14px 0 20px 0;
+    font-size:14px;
+    color: #919191;
+}
+.login_form .login_form_in .handle_btn .forget_btn{
+    color: #919191;
+}
+.login_form .login_form_in .handle_btn a:hover{
+    color: #2987e6;
+}
+
+/*记住密码*/
+.login_form .login_form_in .remember_btn{
+    position: relative;
+    padding-left:33px;
+    cursor: pointer;
+}
+ .check_box{
+    width:16px;
+    height:16px;
+    border:1px solid #dcdcdc;
+    position: absolute;
+    left:3px;
+    top:50%;
+    margin-top:-8px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+     background-color: #fff;
+}
+.check_box.active{
+    background:#2987e6 url("../images/gou.png")  no-repeat;
+    border:1px solid #2987e6;
+    background-position: 1px 1px;
+}
+.btn{
+    height:44px;
+    line-height:44px;
+    font-size:16px;
+    background-color: #33aaff;
+    color: #fff;
+    width:100%;
+    border:none;
+    font-family:"microsoft yahei";
+    margin:0 0 22px 0;
+    cursor: pointer;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    outline: none;
+}
+.other_login .other_login_title{
+    font-weight:normal;
+    font-size:14px;
+    color: #919191;
+    text-align: center;
+}
+.other_login .other_login_type{
+    margin-top:22px;
+    padding:0 50px;
+}
+.other_login .other_login_type a{
+    display: inline-block;
+    width:30%;
+    text-align: center;
+}
+.other_login .other_login_type a i{
+    font-size:26px;
+}
+.other_login .other_login_type .type_qq{
+    color: #2693ff;
+}
+.other_login .other_login_type .type_wx{
+    color: #81cb3d;
+}
+.other_login .other_login_type .type_wb{
+    color: #f14f4f;
+}
+
+/*注册*/
+.register_box{
+    padding-top:45px;
+    min-height:660px;
+}
+.register_form{
+    width:862px;
+    border-right:1px solid #dcdcdc;
+}
+.register_form dl{
+    line-height:50px;
+    font-size:16px;
+    margin-top:17px;
+}
+.register_form dl dt{
+    width:128px;
+    padding-right:16px;
+    text-align: right;
+}
+.register_form dl .reg_inp,.register_form dl .reg_code_inp{
+    width:357px;
+    height:46px;
+    border:1px solid #dcdcdc;
+    font-size:14px;
+    padding-left:10px;
+}
+.register_form dl .reg_code_inp{
+    width:172px;
+    float: left;
+}
+.register_form dl .reg_code{
+    width:173px;
+    height:50px;
+    line-height:50px;
+    text-align: center;
+    background-color: #2987ec;
+    color: #fff;
+    font-size:16px;
+    border:none;
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.register_form dl .reg_code.active{
+    background-color: #ccc;
+    color: #919191;
+    cursor: no-drop;
+}
+.register_form dl .reg_dec{
+    margin-left:17px;
+    font-size:14px;
+    color: #919191;
+}
+
+
+.deal_box{
+    position: relative;
+    margin:50px 0 33px 140px;
+    padding-left:30px;
+    font-size:14px;
+    color: #919191;
+    cursor: pointer;
+}
+.deal_box a{
+    color: #919191;
+}
+.register_btn{
+    width:368px;
+    height:50px;
+    line-height:50px;
+    color: #fff;
+    text-align: center;
+    background-color: #2987ec;
+    font-size:18px;
+    border:none;
+    margin-left:140px;
+    cursor: pointer;
+}
+
+.other_type_login{
+    width:326px;
+    text-align: center;
+}
+.other_type_login .other_type_login_tit{
+    font-size:16px;
+    font-weight:normal;
+    height:45px;
+    line-height:45px;
+    position: relative;
+    margin-bottom:23px;
+}
+.other_type_login .other_type_login_tit:before{
+    content: '';
+    height:5px;
+    width:123px;
+    position: absolute;
+    bottom:0;
+    left:50%;
+    margin-left:-62px;
+    background: url("../images/main_icon.png") -42px 0 no-repeat;
+}
+
+
+.other_type_login_list a{
+    display: inline-block;
+    width:50px;
+    height:50px;
+    line-height:50px;
+    text-align: center;
+    background-color: #e2e2e2;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    margin:0 11px;
+
+}
+.other_type_login_list a .iconfont{
+    font-size:24px;
+}
+.other_type_login_list .type_qq{
+    color: #2693ff;
+}
+.other_type_login_list .type_wx{
+    color: #81cb3d;
+}
+
+.other_type_login_list .type_wb{
+    color: #f14f4f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*底部*/
+#footer_two{
+    padding:64px 0;
+    background-color: #fff;
+    min-width:1200px;
+}
+.footer_two_nav{
+    text-align: center;
+}
+.footer_two_nav a{
+    font-size:14px;
+    color: #2d2d2d;
+    padding:0 17px;
+}
+.bean{
+    text-align: center;
+    margin:20px 0 0 0;
+    font-size:14px;
+    color: #919191;
+}

@@ -1,0 +1,41 @@
+{
+  "li": {
+    "parsererror": {
+      "-style": "display: block; white-space: pre; border: 2px solid #c77; padding: 0 1em 0 1em; margin: 1em; background-color: #fdd; color: black",
+      "h3": [
+        "This page contains the following errors:",
+        "Below is a rendering of the page up to the first error."
+      ],
+      "div": {
+        "-style": "font-family:monospace;font-size:12px",
+        "#text": "error on line 7 at column 104: Opening and ending tag mismatch: img line 0 and dt
+        "
+      }
+    },
+    "div": [
+      {
+        "-class": "lv_question_left_con_title",
+        "a": {
+          "-href": "javascript:;",
+          "#text": "成都最神奇的地方是什么？"
+        }
+      },
+      {
+        "-class": "lv_guide_info_box",
+        "div": {
+          "-class": "lv_guide_info",
+          "a": {
+            "-href": "javascript:;",
+            "dl": {
+              "-class": "clearfix",
+              "dt": {
+                "-class": "left",
+                "img": { "-src": "../images/head.jpg" }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

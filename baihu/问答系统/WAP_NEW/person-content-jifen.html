@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>个人中心</title>
+    <!--rem布局-->
+    <script src="js/reset_font.js"></script>
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="js/isscroll/two.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/person-center-jifen.css">
+</head>
+<body>
+<!--头部-->
+<div class="public-head m-flex-box">
+
+    <a href="javascript:;" class="back"><span class="back-icon"></span></a>
+    <h2 class="m-flex public-head-title">积分明细</h2>
+</div>
+<div class="jifen-box" id="scroller">
+    <ul class="jifen-list" id="list">
+        <li class="m-flex-box">
+
+            <div class="m-flex jinfen-list-dec">
+                <p class="jifen-type">签到</p>
+                <span class="time">2017-2-8  10:00</span>
+            </div>
+            <span class="jifen-list-add">+4</span>
+        </li>
+        <li class="m-flex-box">
+
+            <div class="m-flex jinfen-list-dec">
+                <p class="jifen-type">签到</p>
+                <span class="time">2017-2-8  10:00</span>
+            </div>
+            <span class="jifen-list-add">+4</span>
+        </li>
+        <li class="m-flex-box">
+
+            <div class="m-flex jinfen-list-dec">
+                <p class="jifen-type">签到</p>
+                <span class="time">2017-2-8  10:00</span>
+            </div>
+            <span class="jifen-list-add">+4</span>
+        </li>
+        <li class="m-flex-box">
+
+            <div class="m-flex jinfen-list-dec">
+                <p class="jifen-type">签到</p>
+                <span class="time">2017-2-8  10:00</span>
+            </div>
+            <span class="jifen-list-add">+4</span>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/isscroll/Scrollload.js"></script>
+<script>
+
+    var count = 0;
+    var str ='<li class="m-flex-box"><div class="m-flex jinfen-list-dec"> <p class="jifen-type">签到</p> <span class="time">2017-2-8  10:00</span> </div> <span class="jifen-list-add">+4</span></li>';
+    new Scrollload(document.querySelector('#scroller'), function(sl){//this===sl
+        setTimeout(function () {
+            if (count++ < 5) {
+                $('#list').append(str);
+                sl.unLock();
+            } else {
+                sl.noData();
+            }
+        }, 500);
+//        $.ajax({
+//            type: 'post',
+//            url: "#",
+//            dataType: 'json',
+//            data:{page:pagenum1},
+//            success: function(data){
+//                if (data['list'].length!='0') {//end在这里就表示已经加载完的意思，真实业务需要你通过data来判断。
+//                    //还没加载完的时候
+//                    // 要插入数据必须在底部DOM的前面,如果项目中没有用到jquery怎么插数据可以看demo1，或者找找insertAdjacentHTML方法如果使用，也非常方便，真的不一定要用jquery。
+//                    getattention1(data.list);
+//
+//                    pagenum1++;
+//                    // 每次数据加载完，必须解锁。
+//                    // 需要解锁的原因是插件在每次到底部的时候都会去锁住不调用loadMoreFn，你必须解锁了下次到底部的时候才能继续调用loadMoreFn。为什么要锁住呢？如果不锁住就会连续调用loadMoreFn.
+//                    sl.unLock()
+//                } else {
+//                    //如果加载完了，那么需要调用noData方法。这样底部DOM会从原来的加载动画变成结束div
+//                    sl.noData()
+//                }
+//            },
+//            error: function(xhr, type){
+//                // 加载出错，需要执行该方法。这样底部DOM会出现出现异常的样式。
+//                sl.throwException()
+//            }
+//        })
+    })
+</script>

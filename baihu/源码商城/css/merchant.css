@@ -1,0 +1,169 @@
+
+.w180{
+    width: 180px !important;
+}
+.merchant_tab{
+    height:46px;
+    line-height:46px;
+    font-size:14px;
+    background-color: #f5f5f5;
+    padding:0 12px;
+    color: #919191;
+}
+.merchant_tab_l a{
+    color: #919191;
+    padding:0 20px;
+}
+.merchant_tab_l a.active,.merchant_tab_l a:hover,.merchant_num{
+    color: #2987e6;
+}
+.merchant_tab_r{
+    margin-right:12px;
+}
+
+/*商家列表*/
+.merchant_show_list{
+    width:962px;
+}
+
+/*店铺推荐*/
+.recommend_shop_list{
+    float: left;
+    margin-top:12px;
+    margin-right:-26px;
+}
+.recommend_shop_list .recommend_shop_list_item{
+    background-color: #fff;
+    width:197px;
+    float: left;
+    margin:0 26px 26px 0;
+    padding:10px;
+}
+.recommend_shop_list .recommend_shop_list_item.hover{
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 0 20px rgba(0,0,0,.2);
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.recommend_shop_list .recommend_shop_list_item .recommend_shop_logo{
+    width:196px;
+    height:196px;
+    border:1px solid #dcdcdc;
+    overflow: hidden;
+}
+.recommend_shop_list .recommend_shop_list_item .recommend_shop_logo img{
+    width:100%;
+}
+.recommend_shop_info .shop_name{
+    font-size:16px;
+    font-weight:normal;
+    margin-top:10px;
+    margin-bottom:6px;
+}
+.credit_icon{
+    display: block;
+    height:15px;
+    background: url("../images/star_icon.gif") 0 0 no-repeat;
+}
+.s_star_1{
+    background-position: 0 0 !important;
+}
+.s_star_2{
+    background-position: 0 -15px !important;
+}
+.s_star_3{
+    background-position: 0 -30px !important;
+}
+.s_star_4{
+    background-position: 0 -45px !important;
+}
+.s_star_5{
+    background-position: 0 -60px !important;
+}
+.s_zuan_1{
+    background-position: 0 -75px !important;
+}
+.s_zuan_2{
+    background-position: 0 -90px !important;
+}
+.s_zuan_3{
+    background-position: 0 -105px !important;
+}
+.s_zuan_4{
+    background-position: 0 -120px !important;
+}
+.s_zuan_5{
+    background-position: 0 -135px !important;
+}
+.s_guan_1{
+    background-position: 0 -150px !important;
+}
+.s_guan_2{
+    background-position: 0 -165px !important;
+}
+.s_guan_3{
+    background-position: 0 -180px !important;
+}
+.s_guan_4{
+    background-position: 0 -195px !important;
+}
+.s_guan_5{
+    background-position: 0 -210px !important;
+}
+.recommend_shop_info .shop_data{
+    font-size:14px;
+    color: #919191;
+    height:34px;
+    line-height:34px;
+}
+.recommend_shop_info .shop_other_line a{
+    display: block;
+    line-height:22px;
+    font-size:14px;
+    color: #919191;
+}
+.recommend_shop_info .shop_other_line .shop_other_sale{
+    color: #fe0000;
+    max-width:66px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.recommend_shop_info .shop_other_line .shop_other_text{
+    max-width: 112px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/*推荐商家*/
+.merchant_rec{
+    width:203px;
+    border:1px solid #dcdcdc;
+}
+.merchant_rec .merchant_rec_title{
+    height:44px;
+    line-height: 44px;
+    background: #f5f5f5;
+    font-size:16px;
+    color: #919191;
+    padding:0 0 0 20px;
+    font-weight:normal;
+    border-bottom:1px solid #dcdcdc;
+}
+.merchant_rec .merchant_rec_list{
+    margin:0;
+    width:203px;
+}
+.merchant_rec .merchant_rec_item{
+    margin: 0 0 26px 0;
+    width:183px;
+}
+.merchant_rec .merchant_rec_item .recommend_shop_logo{
+    width:178px;
+    height:178px;
+}

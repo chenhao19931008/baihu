@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>个人中心-我的回答</title>
+    <!--rem布局-->
+    <script src="js/reset_font.js"></script>
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/person-center.css">
+</head>
+<body style="background: #fff;">
+<!--头部-->
+<div class="public-head m-flex-box">
+    <a href="javascript:;" class="back"><span class="back-icon"></span></a>
+    <h2 class="m-flex public-head-title">我的回答</h2>
+</div>
+
+<!--我的回答-->
+<div class="header-tab m-flex-box">
+    <a href="javascript:;" class="active">系统消息</a>
+    <a href="javascript:;">回答消息</a>
+</div>
+<div class="tab-content">
+    <div class="person-center-fans" style="display: block;">
+        <ul class="fans-list message-box">
+            <li>
+                <div class="message-content m-flex-box">
+                    <div class="message-icon"><span></span></div>
+                    <div class="m-flex message-content-in">
+                        <p>
+                            Hi 亲爱，欢迎加入白狐医疗问答。真实的头像更易拉近彼此的距
+                            离。快去换个心仪的头像，开启交流的无限可能吧。
+                            <a href="javascript:;" class="blue"> 点击换头像>>></a>
+                        </p>
+                        <span class="time">2017.2.1</span>
+                    </div>
+                    <div class="del">
+                        <span class="iconfont icon-shanchu"></span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="message-content m-flex-box">
+                    <div class="message-icon"><span></span></div>
+                    <div class="m-flex message-content-in">
+                        <p>
+                            Hi 亲爱，欢迎加入白狐医疗问答。真实的头像更易拉近彼此的距
+                            离。快去换个心仪的头像，开启交流的无限可能吧。
+                            <a href="javascript:;" class="blue"> 点击ddd换头像>>></a>
+                        </p>
+                        <span class="time">2017.2.1</span>
+                    </div>
+                    <div class="del">
+                        <span class="iconfont icon-shanchu"></span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="person-center-fans" style="display: none;">
+        <ul class="fans-list message-box">
+            <li>
+                <div class="message-content m-flex-box">
+
+                    <div class="m-flex message-content-in">
+                        <a href="javascript:;">
+                            <p><span class="blue">燕飞来</span>回答了我的提问：</p>
+                            <h2 class="message-question-title">脖子后边骨头那里疼怎么回事?</h2>
+                            <span class="time">2017.2.1</span>
+                        </a>
+
+                    </div>
+                    <div class="del">
+                        <span class="iconfont icon-shanchu"></span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="message-content m-flex-box">
+
+                    <div class="m-flex message-content-in">
+                        <a href="javascript:;">
+                            <p><span class="blue">燕飞ddd来</span>回答了我的提问：</p>
+                            <h2 class="message-question-title">脖子后边骨头那里疼怎么回事?</h2>
+                            <span class="time">2017.2.1</span>
+                        </a>
+
+                    </div>
+                    <div class="del">
+                        <span class="iconfont icon-shanchu"></span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+</body>
+</html>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="plug/layer_mobile/layer.js"></script>
+<script src="js/main.js"></script>
+<script>
+
+    var messageTab =  new _tabFn('.header-tab','.tab-content');//TAB切换
+
+
+    var delMessage = new delFn('.message-box li','.del');//第一个参数为要删除的元素，第二个为删除出发按钮
+
+</script>

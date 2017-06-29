@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../assets/js/jquery-1.11.1.js"></script>
+    <!--<![endif]-->
+    <script src="../layer_mobile/layer.js"></script>
+    <script src="../assets/js/amazeui.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script type="text/javascript" src="../js/style.js"></script>
+    <script src="../js/jquery.star-rating-svg.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/star-rating-svg.css">
+    <link rel="stylesheet" href="../isscroll/two.css">
+    <link rel="stylesheet" href="../assets/css/amazeui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body  style="background-color: #fff;">
+    <nav class="pl_nav fans_nav">
+        <div class="dq_bac">
+            <a href="javascript:" onclick="self.location=document.referrer;">
+                <img class="dq_back" src="../img/back.png">
+            </a>
+        </div><!-- 
+         --><span>忘记密码</span>
+    </nav>
+    <form class="forg">
+        <div class="forg_div forg_div_email">
+            <img src="../img/email1.png"><!-- 
+             --><input class="phone_number" type="text" name="" placeholder="请输入注册邮箱号">
+        </div>
+        <input type="button" class="send_btn forg_btn" name="" value="发送验证链接">
+    </form>
+    <script type="text/javascript">
+        //验证函数
+        function reg_phone(data) {
+            if (!data) {
+                return;
+            }
+            var phone = $.trim($(data.phone).val()),
+                reg_phone = data.reg;
+
+            if (phone == "") {
+                layer.open({
+                    skin: "msg",
+                    content: "请输入邮箱",
+                    time: 1
+                });
+                return false;
+            } else if (!reg_phone.test(phone)) {
+                layer.open({
+                    skin: "msg",
+                    content: "请输入正确邮箱",
+                    time: 1
+                });
+                return false;
+            }
+
+            return true;
+
+        }
+
+
+    //    验证原来邮箱
+        $('.send_btn').on('click', function() {
+            var bindPhone2 = reg_phone({
+                phone: ".phone_number",
+                reg: /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/
+            });
+            if (!bindPhone2) {
+                return false;
+            }
+            time_down();
+        });
+
+        var time_down = function() {
+        //手机验证倒计时
+        var timer = null; //timer变量，控制时间
+        var count = 60; //间隔函数，1秒执行
+        var curCount = 0; //当前剩余秒数
+        var code = ""; //验证码
+        var codeLength = 6; //验证码长度
+
+        function sendMessage() {
+
+
+
+            curCount = count;
+
+            //设置button效果，开始计时
+            $(".send_btn").attr("disabled", "true");
+            $(".send_btn").val(curCount + "s");
+            $(".send_btn").addClass('active');
+            timer = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次
+            SetRemainTime();
+
+
+        }
+        //timer处理函数
+        function SetRemainTime() {
+            if (curCount == 0) {
+                window.clearInterval(timer); //停止计时器
+                $(".send_btn").removeAttr("disabled"); //启用按钮
+                $(".send_btn").removeClass('active');
+                $(".send_btn").val("重新发送");
+
+                // code = ""; //清除验证码。如果不清除，过时间后，输入收到的验证码依然有效
+            } else {
+                curCount--;
+                $(".send_btn").val(curCount + "s");
+            }
+        }
+
+
+
+        return sendMessage();
+
+    }
+    </script>
+</body>
+</html>

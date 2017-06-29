@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="font/iconfont.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <!--个人中心-->
+    <link rel="stylesheet" href="css/person-content.css">
+</head>
+<body>
+
+<!--头部信息-->
+<div class="head-wrap">
+    <div class="container head clearfix">
+        <div class="left head-l">
+            <span>你好，欢迎来到白狐医疗问答系统</span>
+            <span class="hot-line"><i class="iconfont icon-dianhua1"></i>客服热线    &nbsp;&nbsp;  400-622-2976</span>
+        </div>
+        <div class="right head-r" >
+            <ul class="head-r-list clearfix">
+
+                <li><a href="javascript:;" class="blue">登录</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="javascript:;" class="blue">注册</a></li>
+            </ul>
+            <div class="current logined clearfix head-r-list">
+                <a href="javascript:;" class="left signin">签到</a>
+                <a href="javascript:;" class="left message">
+                    <i class="iconfont icon-2kaoshikouyutilabaicon"></i>消息
+                    <span class="message-icon">9</span>
+                </a>
+                <div class="right menu-list-wrap">
+                    <a href="javascript:;" class="user-pic"><img src="img/head.png" alt=""></a>
+                    <ul class="menu-list">
+                        <li><a href="javascript:;" class="font-sl">积分 <span class="yellow">99</span></a></li>
+                        <li><a href="javascript:;">我的主页</a></li>
+                        <li><a href="javascript:;">我的关注</a></li>
+                        <li><a href="javascript:;">我的提问</a></li>
+                        <li><a href="javascript:;">退出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--个人中心-->
+<div class="person-content">
+    <!--头部-->
+    <div class="person-content-top">
+            <div class="container person-content-top-in">
+                <a href="javascript:;" class="left logo"><img src="img/center/logo.png" alt=""></a>
+                <div class="person-content-search right">
+                    <form action="#">
+                        <div class="person-content-search-in">
+                            <input type="text" class="search-inp">
+                            <button class="search-btn"><i class="iconfont icon-sousuo"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </div>
+    <!--内容区域-->
+    <div class="container person-content-main clearfix">
+        <div class="left person-content-main-l">
+            <ul class="nav-list">
+                <li><a href="javascript:;" class="active"> <i class="icon person-icon"></i>个人中心</a></li>
+                <li><a href="person-content-basicinfo.html"><i class="icon basic-icon"></i>基本资料</a></li>
+                <li><a href="person-content-attention.html"><i class="icon att-icon"></i>我的关注</a></li>
+                <li><a href="person-answer.html"><i class="icon ask-icon"></i>我的回答</a></li>
+                <li><a href="person-message.html"><i class="icon message-icon"></i>我的消息</a></li>
+                <li><a href="person-bind.html"><i class="icon zh-icon"></i>账号绑定</a></li>
+                <li><a href="person-change-pass.html"><i class="icon pass-icon"></i>修改密码</a></li>
+                <li><a href="person-wallet.html"><i class="icon qb-icon"></i>我的钱包</a></li>
+            </ul>
+        </div>
+        <!--右侧-->
+        <div class="right person-content-main-r">
+                <div class="person-info clearfix">
+                    <div class="left person-info-l clearfix">
+                        <div class="left person-info-l-pic">
+                            <a href="javascript:;"><img src="img/doc03.png" alt=""></a>
+                        </div>
+                        <div class="left person-info-l-text">
+                            <span class="person-name font-sl">五月花开</span>
+                            <span class="person-class blue font-sl">医生用户</span>
+                            <div class="bind-info clearfix">
+                                <a href="javascript:;" class="active" title="绑定手机"><i class="bind-icon"></i></a>
+                                <a href="javascript:;" title="绑定qq"><i class="bind-icon bind-qq"></i></a>
+                                <a href="javascript:;" title="绑定微信"><i class="bind-icon bind-wx"></i></a>
+                                <a href="javascript:;" title="绑定邮箱"><i class="bind-icon bind-email"></i></a>
+                            </div>
+                        </div>
+                        <div class="left attestation-box">
+                            <!--认证-->
+                            <a href="javascript:;" class="active">立即认证</a>
+                            <!--认证中-->
+                            <a href="javascript:;" class="atting">认证中</a>
+                            <!--认证完成-->
+                             <a href="javascript:;" class="atting">认证完成</a>
+                        </div>
+                        <span class="bg"></span>
+                    </div>
+                    <div class="right person-info-r">
+                        <a href="javascript:;">
+                            <span class="jf-icon"></span>
+                            <p>积分</p>
+                            <span class="yellow">4</span>
+                        </a>
+                        <a href="javascript:;">
+                            <span class="jf-icon qd-icon"></span>
+                            <p>累计签到</p>
+                            <span class="yellow">1天</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="person-question-con">
+                    <div class="person-question-top">
+                        共 <span class="yellow">2</span>个回答  <span class="yellow">0</span> 个提问
+                    </div>
+                    <!--没有数据的时候显示-->
+                    <div class="no-data" style="display: none">
+                        <img src="img/center/no_num.png" alt="">
+                        <p>没有任何数据</p>
+                    </div>
+                    <div class="person-question-list">
+                        <ul class="person-answer-con">
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="person-answer-top clearfix">
+                                        <div class="person-answer-pic left">
+                                            <img src="img/default-pic.png" alt="">
+                                        </div>
+                                        <div class="person-answer-info left">
+                                            <span class="question-ok"></span>
+                                            <p class="question-title font-sl">我的眼睛不是经常有这情况，而是有时候眼睛痒，同时流鼻涕，这是怎么回事？</p>
+                                            <p class="question-boy">
+                                                <span>提问者:笑笑长乐</span>
+                                                <span>3个回答</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="person-answer-text">
+                                        <p>我的回答：根据症状怀疑过敏性炎症，注意休息避免受凉，建议服用开瑞坦抗过敏治疗，同时注意眼部卫生。</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="person-answer-top clearfix">
+                                        <div class="person-answer-pic left">
+                                            <img src="img/default-pic.png" alt="">
+                                        </div>
+                                        <div class="person-answer-info left">
+                                            <!--<span class="question-ok"></span>-->
+                                            <p class="question-title font-sl">我的眼睛不是经常有这情况，而是有时候眼睛痒，同时流鼻涕，这是怎么回事？</p>
+                                            <p class="question-boy">
+                                                <span>提问者:笑笑长乐</span>
+                                                <span>3个回答</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="person-answer-text">
+                                        <p>我的回答：根据症状怀疑过敏性炎症，注意休息避免受凉，建议服用开瑞坦抗过敏治疗，同时注意眼部卫生。</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+        </div>
+    </div>
+
+</div>
+
+<!--签到-->
+<div class="data-picker-wrap">
+    <div class="data-picker-in">
+        <span class="data-close"><i class="iconfont icon-guanbi"></i></span>
+        <div class="data-top">
+            <p>已连续签到 <strong class="blue">2</strong> 天</p>
+        </div>
+        <div class="claeafix data-bot">
+            <div id="data-picker" class="left">
+                <div style="width:320px;" id="calendar"></div>
+            </div>
+            <div class="left data-bot-right">
+                <p>今日获得积分 <span class="blue"> 4</span></p>
+                <p>当前积分 <span class="blue"> 4</span></p>
+                <dl class="">
+                    <dt>签到规则</dt>
+                    <dd>首次签到科获得4个积分奖励</dd>
+                    <dd>连续签到每天增加2个积分奖励</dd>
+                    <dd>连续签到10天以上每天获得16个
+                        积分奖励</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--footer-->
+<div class="footer">
+    <div class="container">
+        <div class="footer-top clearfix">
+            <a href="javascript:;">首页</a>
+            <a href="javascript:;">公司简介</a>
+            <a href="javascript:;">在线帮助</a>
+            <a href="javascript:;">渠道招商</a>
+            <a href="javascript:;">定制服务</a>
+            <a href="javascript:;" class="border-right-none">升级计划</a>
+        </div>
+        <div class="footer-bot">
+            <p>Copyright 2010-2015 All Rights Reserved. 苏ICP备123123123号-1（苏）医广[2012]第12-17-659号 苏卫网审（2011）174号</p>
+            <p>全国统一客服电话：400-622-2972</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/globle.js"></script>
+<script src="js/qiandao.js"></script>
+<script>
+    $(function(){
+        $('.signin').on('click',function(){
+
+            $('.data-picker-wrap').addClass('active');
+
+            var date = new Date();
+
+            var day = date.getDate();
+
+
+            //签到
+            //ajax获取日历json数据
+            var signList=[{"signDay":"25"},{"signDay":"11"},{"signDay":"12"},{"signDay":"13"}];//已签到数据
+            signList.push({"signDay":day});
+            calUtil.init(signList);
+        });
+
+
+        $('.data-close').on('click',function(){
+
+            $('.data-picker-wrap').removeClass('active');
+
+        });
+
+
+    });
+
+</script>

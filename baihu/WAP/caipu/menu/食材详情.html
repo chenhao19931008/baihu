@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../assets/js/jquery-1.11.1.js"></script>
+    <!--<![endif]-->
+    <script src="../layer/layer.js"></script>
+    <script src="../assets/js/amazeui.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script type="text/javascript" src="../js/style.js"></script>
+    <script src="../js/jquery.star-rating-svg.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/star-rating-svg.css">
+    <link rel="stylesheet" type="text/css" href="../layer/css/layer.css">
+    <link rel="stylesheet" href="../isscroll/two.css">
+    <link rel="stylesheet" href="../assets/css/amazeui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body  style="background-color: #fff;">
+    <div class="scxq_top" style="background-image: url(../img/bg1.png)">
+        <nav class="pl_nav fans_nav">
+            <div class="dq_bac">
+                <a href="javascript:" onclick="self.location=document.referrer;">
+                    <img class="dq_back" src="../img/back.png">
+                </a>
+            </div><!-- 
+             --><span>食材详情</span><!-- 
+             --><div class="dq_bac right">
+                <a href="javascript:h_s()">
+                    <img class="dq_back" src="../img/add.png">
+                </a>
+                <ul class="i_xl i_xlk1 fans_nav_ul">
+                    <a href="" class="i_index">
+                        <li>首页</li>
+                    </a>
+                    <a href="" class="i_message">
+                        <li>消息</li>
+                    </a>
+                    <a href="" class="i_center">
+                        <li>个人中心</li>
+                    </a>
+                    <a href="" class="i_quite">
+                        <li>退出</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+        <div class="scxq_top_box">
+            <img class="scxq_top_img" src="../img/nr.png">
+            <p class="scxq_top_text">牛肉</p>
+        </div>
+        <div class="scxq_top_intro">
+            <p>蛋白质含量高、脂肪含量低，享有“肉中骄子”的美称，特别适合减肥瘦身人士食用，经常食用有强健筋骨、提高免疫力等功效。</p>
+            <ul class="scxq_top_ul">
+                <li>【食量建议】：每餐约80克 </li>
+                <li>【适宜人群】：一般人群均可食用</li>
+                <li>【禁忌人群】：患皮肤病、肝病、肾病的患者慎食</li>
+                <li>【建议搭配】：西红柿</li>
+            </ul>
+        </div>
+    </div>
+    <section class="scxq_section">
+        <h4 class="scxq_section_tit">牛肉的做法</h4>
+        <ul class="ztxq_detail_contain am-avg-sm-2">
+                 <li>
+                    <a href="">
+                        <div class="act_div">
+                            <img src="../img/big.png" class="thumb">
+                            <h4 class="tit_h4">
+                                香椿千层饼
+                            </h4>
+                            <div class="act_star_com">
+                                <div class="act_star_x0"></div>
+                                <span class="act_star_text">
+                                    <span class="act_star_count">16</span>
+                                    <span>
+                                        条评论
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                 <li>
+                    <a href="">
+                        <div class="act_div">
+                            <img src="../img/big.png" class="thumb">
+                            <h4 class="tit_h4">
+                                香椿千层饼
+                            </h4>
+                            <div class="act_star_com">
+                                <div class="act_star_x0"></div>
+                                <span class="act_star_text">
+                                    <span class="act_star_count">16</span>
+                                    <span>
+                                        条评论
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                 <li>
+                    <a href="">
+                        <div class="act_div">
+                            <img src="../img/big.png" class="thumb">
+                            <h4 class="tit_h4">
+                                香椿千层饼
+                            </h4>
+                            <div class="act_star_com">
+                                <div class="act_star_x0"></div>
+                                <span class="act_star_text">
+                                    <span class="act_star_count">16</span>
+                                    <span>
+                                        条评论
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="act_div">
+                            <img src="../img/big.png" class="thumb">
+                            <h4 class="tit_h4">
+                                香椿千层饼
+                            </h4>
+                            <div class="act_star_com">
+                                <div class="act_star_x0"></div>
+                                <span class="act_star_text">
+                                    <span class="act_star_count">16</span>
+                                    <span>
+                                        条评论
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+    </section>
+<script src="../isscroll/Scrollload.js"></script>
+<script src="../js/pinterest_grid.js"></script>
+<script type="text/javascript">
+    $(".dt_dz").each(function(){
+            $(this).click(function(){
+                if($(this).attr("data-if") == "no"){
+                    count = parseInt($(this).html());
+                    $(this).html(count+1);
+                    $(this).attr("data-if","yes");
+                }
+                else{
+                    layer.open({
+                        skin:"msg",
+                        content:"亲，已经点过赞了呦~",
+                        time:1
+                    });
+                }
+            })
+        })
+
+
+    $(".qzxq_tabar span").each(function(){
+        $(this).click(function(){
+            $(".qzxq_tabar span").removeClass("act");
+            $(this).addClass("act");
+        })
+    });
+
+
+    var star = "act_star_x";
+        $("."+star+"0").starRating({
+            starSize: 12,
+            initialRating: 2,
+            readOnly:true,
+            callback: function(currentRating, $el){
+                // make a server call here
+            }
+        });
+</script>
+</body>
+</html>

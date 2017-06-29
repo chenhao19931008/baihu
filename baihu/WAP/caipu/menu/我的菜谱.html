@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="../assets/js/jquery-1.11.1.js"></script>
+    <!--<![endif]-->
+    <script src="../assets/js/amazeui.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script type="text/javascript" src="../js/style.js"></script>
+    <script src="../js/jquery.star-rating-svg.js"></script>
+    <link rel="stylesheet" href="../isscroll/two.css">
+    <link rel="stylesheet" type="text/css" href="../css/star-rating-svg.css">
+    <link rel="stylesheet" href="../assets/css/amazeui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <style type="text/css">
+        .layui-layer-btn a{
+            font-size: 0.52rem;
+            line-height: 1rem;
+        }
+    </style>
+</head>
+<body style="padding-bottom: 5rem; height: 100%;">
+    <nav class="pl_nav">
+        <div class="dq_bac">
+            <a href="javascript:" onclick="self.location=document.referrer;">
+                <img class="dq_back" src="../img/back.png">
+            </a>
+        </div><!-- 
+         --><span>我的菜谱</span><!-- 
+         --><div class="dq_bac">
+                <input class="bind_bj" type="button" name="" value="编辑">
+            </div>
+    </nav>
+    <div class="my_tab">
+        <ul>
+            <li>已通过</li>
+            <li>待审核</li>
+            <li>未通过</li>
+            <li>草稿箱</li>
+        </ul>
+        <span class="my_tab_line"></span>
+    </div>
+    <div class="my_kong">
+        <img src="../img/no.png">
+        <p>暂时还没有发布菜谱，赶快去发布菜谱吧</p>
+    </div>
+    <section class="bind_contain bind_0 active">
+        <ul class="bind_contain_ul am-avg-md-1 am-avg-lg-2">
+            <li class="bind_contain_li" id="bind_contain_li1">
+                <dl>
+                    <dt style="background-image: url(../img/big.png);">
+                    </dt>
+                    <dd class="bind_contain_dd">
+                        <h4>
+                            <span>
+                                <a href="">
+                                    南瓜牛奶羹
+                                </a>
+                            </span>
+                            <img class="bind_remove" src="../img/wrong2.png">
+                        </h4>
+                        <p><a href="">湘潭润华的面条配上清香的小葱，瞬间让你食欲大开，给你带来味蕾的享受</a></p>
+                        <span>1小时前</span>
+                    </dd>
+                </dl>
+            </li>
+        </ul>
+    </section>
+    <section class="bind_contain bind_1">
+    </section>
+    <section class="bind_contain bind_2">
+    </section>
+    <section class="bind_contain bind_3">
+    </section>
+</body>
+<script src="../layer/layer.js"></script>
+<!-- <script src="../layer_mobile/layer.js"></script> -->
+<script type="text/javascript">
+    function look(content,dom){
+        layer.load(0, {
+                    shade: [0.5,'rgba(0,0,0,.8)'] //0.1透明度的白色背景
+                });
+        setTimeout(function(){
+            layer.closeAll();
+        },2000)
+        $.ajax({
+            url:'',
+            type:'',
+            data:'',
+            success:function(data){
+                layer.closeAll();
+                content.append('111')
+            }
+        })
+    }
+    $(".my_tab li").each(function(){
+        $(this).unbind("click");
+        //给tab添加点击事件
+        $(this).click(function(){
+            $(".bind_contain").removeClass("active");
+            // 让对应的容器显示
+            $(".bind_contain").eq($(this).index()).addClass("active");
+            $(".my_tab_line").animate({
+                "left":25*$(this).index()+"%",
+            },200);
+            look();
+            display($(".bind_contain").eq($(this).index()));
+        })
+    })
+
+    function display(dom){
+        // 判断该容器下是否有子元素
+            if(dom.find(".bind_contain_ul").children().length>0){
+                $(".my_kong").css("display","none");
+            }
+            else{
+                $(".my_kong").css("display","block");
+            }
+    }
+
+    function remove(){
+        var dis;
+        $(".bind_remove").each(function(){
+            $(this).click(function(){
+                dis = $(this).parent().parent().parent().parent();
+                bloc = $(this).parent().parent().parent().parent().parent().parent()
+                back(dis,bloc);
+            })
+        })
+    }
+
+
+
+    function back(dis,bloc){
+        layer.open({
+            content: '是否删除该条？'
+            ,btn: ['删除', '取消']
+            ,yes: function(index){
+              dis.remove();
+              display(bloc);
+              layer.close(index);
+            }
+            ,no:function(){
+            }
+        })
+    }
+
+    display($(".bind_contain").eq(0));
+
+    $(".bind_bj").click(function(){
+        if($(".bind_bj").val() == "编辑")
+        {
+            $(".bind_bj").val("取消");
+            remove();
+        }
+        else{
+            $(".bind_bj").val("编辑");
+        }
+        $(".bind_remove").toggle();
+    })
+
+</script>
+</html>

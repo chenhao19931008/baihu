@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>问题列表</title>
+	<link rel="stylesheet" href="font/iconfont.css" />
+	<link href="plug/ue/themes/default/css/umeditor.min.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="css/global.css" />
+	<link rel="stylesheet" href="css/index.css" />
+	<link rel="stylesheet" href="css/doctor-list.css" />
+	<link rel="stylesheet" href="css/question-xq.css" />
+	<link rel="stylesheet" href="css/question-list.css" />
+</head>
+<body>
+	
+	<!--头部信息-->
+	<div class="head-wrap">
+		<div class="container head clearfix">
+			<div class="left head-l">
+				<span>你好，欢迎来到白狐医疗问答系统</span>
+				<span class="hot-line"><i class="iconfont icon-dianhua1"></i>客服热线    &nbsp;&nbsp;  400-622-2976</span>
+			</div>
+			<div class="right head-r" >
+				<ul class="head-r-list clearfix current">
+					
+					<li><a href="javascript:;" class="blue">登录</a></li>
+					<li><a href="#">|</a></li>
+					<li><a href="javascript:;" class="blue">注册</a></li>
+				</ul>
+				<div class="logined clearfix head-r-list">
+					<a href="javascript:;" class="left signin" id="js-just-qiandao">签到</a>
+					<a href="javascript:;" class="left message">
+						<i class="iconfont icon-2kaoshikouyutilabaicon"></i>消息
+						<span class="message-icon">9</span>
+					</a>
+					<div class="right menu-list-wrap">
+						<a href="javascript:;" class="user-pic"><img src="img/head.png" alt=""></a>
+						<ul class="menu-list">
+							<li><a href="javascript:;" class="font-sl">积分 <span class="yellow">99</span></a></li>
+							<li><a href="javascript:;">我的主页</a></li>
+							<li><a href="javascript:;">我的关注</a></li>
+							<li><a href="javascript:;">我的提问</a></li>
+							<li><a href="javascript:;">退出</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--头部搜索-->
+	<div class="search-warp">
+		<div class="container clearfix">
+			<div class="logo left">
+				<a href="javascript:;">
+					<h1><img src="img/logo.png" alt=""></h1>
+				</a>
+			</div>
+			<div class="left search-box clearfix">
+				<form action="#" method="#">
+					<div class="left search-text">
+						<input type="text" placeholder="请输入要搜索的问题" id="bdcsMain" name="key" value="">
+						<button class="search2"><i class="iconfont icon-iconfontsousuo"></i></button>
+					</div>
+				</form>
+				<div class="left search-btns clearfix">
+					<a href="javascript:;" class="ask">我要提问</a>
+				</div>
+			</div>
+			<div class="phone24">
+				<p>24h客服热线电话</p>
+				<p>400-622-2976</p>
+			</div>
+		</div>
+		
+	</div>
+	
+	<!--导航-->
+	<div class="navbar-wrap">
+		<div class="container clearfix">
+			<!--分类-->
+			<div class="left navbar-l">
+				<a href="javascript:;" class="title"><i class="iconfont icon-fenlei"></i>科室分类</a>
+				<div class="class-bar-wrap" style="display: none;">
+					<div class="class-bar">
+						<ul class="class-bar-list">
+						 <li class="">
+								<div class="class-bar-line">
+									<dl class="clearfix">
+										<dt class="left">
+											<a href="#" class="bold">外科</a>
+										</dt>
+										
+									</dl>
+								</div>
+								<div class="class-bar-con clearfix">
+									<div class="class-bar-con-item left">
+										<h2><a href="#">普外科</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+												<a href="#">肿胀</a>
+												<a href="#">脓肿</a>
+												<a href="#">慢性阑尾炎</a>
+												<a href="#">囊肿</a>
+												<a href="#">腹痛</a>									
+											</dd>
+										</dl>
+										
+									</div>
+									<div class="class-bar-con-item left">
+										<h2><a href="#">骨科</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+												<a href="#">脊柱畸形</a>
+												<a href="#">背部疼痛</a>
+												<a href="#">骨蒸</a>
+												<a href="#">颈椎综合症</a>
+												<a href="#">颈强直</a>
+												<a href="#">股骨头坏死</a>
+												<a href="#">颈椎病</a>
+												<a href="#">胸骨骨折</a>
+												<a href="#">骨折</a>
+												<a href="#">骨质增生</a>									
+											</dd>
+										</dl>
+										
+									</div><div class="class-bar-con-item left">
+										<h2><a href="#">神经外科</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+												<a href="#">脑震荡</a>
+												<a href="#">脑积水</a>									
+											</dd>
+										</dl>
+										
+									</div>
+										<div class="class-bar-con-item left">
+											<h2><a href="#">心胸外科</a></h2>
+											
+											<dl class="">
+												
+												<dd>
+													<a href="#">血胸</a>
+													<a href="#">动脉硬化性闭塞症鸡胸</a>									
+												</dd>
+											</dl>
+											
+										</div>
+									<div class="class-bar-con-item left">
+										<h2><a href="#">泌尿外科</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+												<a href="#">尿道结石</a>
+												<a href="#">膀胱结石</a>
+												<a href="#">尿路感染</a>
+												<a href="#">膀胱炎</a>									
+											</dd>
+										</dl>
+										
+									</div><div class="class-bar-con-item left">
+										<h2><a href="#">肛肠外科</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+												<a href="#">肛瘘</a><a href="#">肛裂</a><a href="#">肛周脓肿</a>									
+											</dd>
+										</dl>
+										
+									</div><div class="class-bar-con-item left">
+										<h2><a href="#">乳腺外科</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+												<a href="#">乳腺增生</a><a href="#">乳房纤维瘤</a><a href="#">乳房纤维腺瘤</a>									
+											</dd>
+										</dl>
+										
+									</div>
+									<div class="class-bar-con-item left">
+										<h2><a href="#">肝胆外科</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+											<a href="#">胆结石</a><a href="#">胆囊息肉</a>									
+											</dd>
+										</dl>
+										
+									</div>
+									<div class="class-bar-con-item left">
+										<h2><a href="#">血管外科</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+											<a href="#">静脉炎</a><a href="#">下肢深静脉血栓形成</a><a href="#">痔疮</a>									
+											</dd>
+										</dl>
+										
+									</div><div class="class-bar-con-item left">
+										<h2><a href="#">烧伤科</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+											<a href="#">皮肤移植术</a>									
+											</dd>
+										</dl>
+										
+									</div>
+									<div class="class-bar-con-item left">
+										<h2><a href="#">胃肠外科</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+																				
+											</dd>
+										</dl>
+										
+									</div>						
+								</div>
+							</li>
+							<li class="">
+								<div class="class-bar-line">
+									<dl class="clearfix">
+										<dt class="left">
+											<a href="#" class="bold">内科</a>
+										</dt>
+										
+									</dl>
+								</div>
+								<div class="class-bar-con clearfix">
+									<div class="class-bar-con-item left">
+										<h2><a href="#">心血管内科</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+												<a href="#">心肌梗塞</a>
+												<a href="/#">心律不齐</a>
+												<a href="#">高血压</a>
+												<a href="#">心脏病</a>
+												<a href="#">冠心病</a>
+												<a href="#">先天性心脏病</a>
+												<a href="#">心脏杂音</a>
+												<a href="#">心悸</a>
+												<a href="#">心力衰竭</a>
+												<a href="#">心肌炎</a>									
+											</dd>
+										</dl>
+										
+									</div><div class="class-bar-con-item left">
+										<h2><a href="#">神经内科</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+												<a href="#">脑萎缩</a>
+												<a href="#">神经性头痛</a>
+												<a href="#">老年痴呆</a>
+												<a href="#">中风</a>
+												<a href="#">癫痫</a>
+												<a href="#">脑出血</a>
+												<a href="#">帕金森病</a>
+												<a href="#">脑血栓</a>
+												<a href="#">脑瘫</a>
+												<a href="#">头痛</a>									
+											</dd>
+										</dl>
+										
+									</div><div class="class-bar-con-item left">
+										<h2><a href="#">肾内科</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+												<a href="#">急性肾炎</a>
+												<a href="#">慢性肾炎</a>
+												<a href="#">尿毒症</a>
+												<a href="#">肾损伤</a>
+												<a href="#">肾结石</a>
+												<a href="#">多尿</a>
+												<a href="#">肾衰竭</a>									
+											</dd>
+										</dl>
+										
+									</div><div class="class-bar-con-item left">
+										<h2><a href="#">消化内科</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+												<a href="#">胃窦炎</a>
+												<a href="#">习惯性便秘</a>
+												<a href="#">拉肚子</a>
+												<a href="#">慢性胃炎</a>
+												<a href="#">恶心与呕吐</a>
+												<a href="#">肠梗阻</a>
+												<a href="#">消化不良</a>
+												<a href="#">胃肠气胀</a>
+												<a href="#">腹泻</a>
+												<a href="#">恶心</a>									
+											</dd>
+										</dl>
+										
+									</div><div class="class-bar-con-item left">
+										<h2><a href="#">内分泌科</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+												<a href="#">糖尿病</a>
+												<a href="#">甲亢</a>
+												<a href="#">高血脂</a>
+												<a href="#">甲状腺功能减退</a>
+												<a href="#">出汗异常</a>									
+											</dd>
+										</dl>
+										
+									</div><div class="class-bar-con-item left">
+										<h2><a href="#">血液科</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+												<a href="#">贫血</a>
+												<a href="#">白血病</a><a href="#">地中海贫血</a><a href="#">过敏性紫癜</a>									
+											</dd>
+										</dl>
+										
+									</div><div class="class-bar-con-item left">
+										<h2><a href="#">风湿免疫科</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+												<a href="#">痛风</a>
+												<a href="#">风湿性关节炎</a>
+												<a href="#">药物过敏</a>
+												<a href="#">红斑狼疮</a>									
+											</dd>
+										</dl>
+										
+									</div>
+									<div class="class-bar-con-item left">
+										<h2><a href="#">呼吸内科</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+												<a href="#">感冒</a>
+												<a href="#">哮喘</a>
+												<a href="#">肺炎</a>
+												<a href="#">慢性支气管炎</a>
+												<a href="#">胸腔积液</a>
+												<a href="#">干咳</a>
+												<a href="#">咳嗽</a>									
+											</dd>
+										</dl>
+										
+									</div>						
+								</div>
+							</li>
+							<li class="">
+								<div class="class-bar-line">
+									<dl class="clearfix">
+										<dt class="left">
+											<a href="#" class="bold">妇产科/男科</a>
+										</dt>
+										
+									</dl>
+								</div>
+								<div class="class-bar-con clearfix">
+								<div class="class-bar-con-item left">
+										<h2><a href="#">妇科</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+												<a href="#">潮热</a>
+												<a href="#">宫颈炎</a>
+												<a href="#">带下病</a>
+												<a href="#">霉菌性阴道炎</a>
+												<a href="#">卵巢肿瘤</a>
+												<a href="#">月经不调</a>
+												<a href="#">宫外孕</a>
+												<a href="#">阴道炎</a>
+												<a href="#">盆腔炎</a>
+												<a href="#">子宫肌瘤</a>									
+											</dd>
+										</dl>
+										
+									</div><div class="class-bar-con-item left">
+										<h2><a href="#">产科</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+												<a href="#">产后血瘀</a>
+												<a href="#">月痨</a>
+												<a href="#">妊娠糖尿病</a>
+												<a href="#">高龄产妇</a>
+												<a href="#">回乳</a>
+												<a href="#">早孕反应</a>
+												<a href="#">早产</a>
+												<a href="#">前置胎盘</a>
+												<a href="#">妊高征</a>
+												<a href="#">羊水过少</a>									
+											</dd>
+										</dl>
+										
+									</div>
+									<div class="class-bar-con-item left">
+										<h2><a href="#">不孕不育</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+												<a href="#">输卵管炎</a><a href="#">精子稀少</a><a href="#">卵泡破裂</a>									
+											</dd>
+										</dl>
+										
+									</div>
+									<div class="class-bar-con-item left">
+										<h2><a href="#">男科</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+												<a href="#">睾丸变硬</a><a href="#">前列腺钙化</a><a href="#">遗精滑泄</a>									
+											</dd>
+										</dl>
+										
+									</div>						
+								</div>
+							</li>
+							<li class="">
+								<div class="class-bar-line">
+									<dl class="clearfix">
+										<dt class="left">
+											<a href="#" class="bold">儿科</a>
+										</dt>
+										
+									</dl>
+								</div>
+								<div class="class-bar-con clearfix" >
+								<div class="class-bar-con-item left">
+										<h2><a href="#">小儿内科</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+												<a href="#">小儿感冒</a>
+												<a href="#">小儿手足口病</a>
+												<a href="#">婴幼儿腹泻</a>
+												<a href="#">小儿触电与雷击</a>
+												<a href="#">小儿急性中毒</a>
+												<a href="#">小儿高热</a>									
+											</dd>
+										</dl>
+										
+									</div>
+									<div class="class-bar-con-item left">
+										<h2><a href="#">小儿外科</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+												<a href="#">疝气</a>
+												<a href="#">小儿隐睾症</a>
+												<a href="#">小儿烫伤</a>									
+											</dd>
+										</dl>
+										
+									</div><div class="class-bar-con-item left">
+										<h2><a href="#">新生儿科</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+												<a href="#">新生儿肺炎</a>
+												<a href="#">新生儿缺氧缺血性脑病</a>
+												<a href="#">新生儿败血症</a>									
+											</dd>
+										</dl>
+										
+									</div>
+									<div class="class-bar-con-item left">
+										<h2><a href="#">小儿精神科</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+																				
+											</dd>
+										</dl>
+										
+									</div>						
+								</div>
+							</li>
+							<li class="">
+								<div class="class-bar-line">
+									<dl class="clearfix">
+										<dt class="left">
+											<a href="#" class="bold">中医科</a>
+										</dt>
+										
+									</dl>
+								</div>
+								<div class="class-bar-con clearfix">
+								<div class="class-bar-con-item left">
+										<h2><a href="#">中医妇科</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+											<a href="#">阴疮</a><a href="#">子满</a><a href="#">乳发</a>									
+											</dd>
+										</dl>
+										
+									</div>
+									<div class="class-bar-con-item left">
+										<h2><a href="#">中医骨伤</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+																				
+											</dd>
+										</dl>
+										
+									</div>
+									<div class="class-bar-con-item left">
+										<h2><a href="#">中医内科</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+												<a href="#">阴虚火旺</a>
+												<a href="#">温热</a>
+												<a href="#">阳虚</a>
+												<a href="#">气血不足</a>
+												<a href="#">上火</a>
+												<a href="#">肺痨</a>
+												<a href="#">湿热下注</a>
+												<a href="#">内热</a>
+												<a href="#">消瘦</a>									
+											</dd>
+										</dl>
+										
+									</div>
+									<div class="class-bar-con-item left">
+										<h2><a href="#">针灸推拿</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+												<a href="#">落枕</a>									
+											</dd>
+										</dl>
+										
+									</div>						
+								</div>
+							</li>
+							<li class="">
+								<div class="class-bar-line">
+									<dl class="clearfix">
+										<dt class="left">
+											<a href="#" class="bold">肿瘤科</a>
+										</dt>
+										
+									</dl>
+								</div>
+								<div class="class-bar-con clearfix">
+								<div class="class-bar-con-item left">
+										<h2><a href="#">生殖细胞瘤</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+																				
+											</dd>
+										</dl>
+										
+									</div>
+									<div class="class-bar-con-item left">
+										<h2><a href="#">甲状腺瘤</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+																				
+											</dd>
+										</dl>
+										
+									</div>
+									<div class="class-bar-con-item left">
+										<h2><a href="#">肠癌</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+																				
+											</dd>
+										</dl>
+										
+									</div>						
+								</div>
+							</li>
+							<li class="">
+								<div class="class-bar-line">
+									<dl class="clearfix">
+										<dt class="left">
+											<a href="#" class="bold">整形美容</a>
+										</dt>
+										
+									</dl>
+								</div>
+								<div class="class-bar-con clearfix">
+								<div class="class-bar-con-item left">
+										<h2><a href="#">脓包型痘痘</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+																				
+											</dd>
+										</dl>
+										
+									</div>
+									<div class="class-bar-con-item left">
+										<h2><a href="#">额头长痘</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+																				
+											</dd>
+										</dl>
+										
+									</div>
+									<div class="class-bar-con-item left">
+										<h2><a href="#">背部长痘</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+																				
+											</dd>
+										</dl>
+										
+									</div>						
+								</div>
+							</li>
+							<li class="">
+								<div class="class-bar-line">
+									<dl class="clearfix">
+										<dt class="left">
+											<a href="#" class="bold">皮肤性病</a>
+										</dt>
+										
+									</dl>
+								</div>
+								<div class="class-bar-con clearfix" >
+								<div class="class-bar-con-item left">
+										<h2><a href="#">皮肤科</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+											<a href="#">皮肤疾病</a>									
+											</dd>
+										</dl>
+										
+									</div>
+									<div class="class-bar-con-item left">
+										<h2><a href="#">性病科</a></h2>
+										
+										<dl class="">
+											
+											<dd>
+																				
+											</dd>
+										</dl>
+										
+									</div>						
+								</div>
+							</li>					
+						
+							<li class="">
+								<div class="class-bar-line">
+									<a href="#" style="font-size: 16px;color: #919191;" class="bold">更多其他科室 </a>
+								</div>
+								
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--导航-->
+			<div class="left navbar-r clearfix">
+				<a href="#">首页</a>
+				<a href="#">名医在线</a>
+				<a href="#">外科</a>
+				<a href="#">帮助中心</a>
+				<a href="http://www.baihu.cn/wenda">购买源码</a>
+			</div>
+			<div class="left index-more">
+				<span>更多 <i class="iconfont icon-arrowDown"></i></span>
+				<ul class="index-more-list" style=" padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+					<li>
+						<a href="#">联系我们</a>
+					</li>
+					<li>
+						<a href="#">内科</a>
+						
+					</li>
+					<li><a href="#">儿科</a></li>
+					<li><a href="#">整形美容</a></li>	
+				</ul>
+			</div>
+		
+			<div class="right index-my-answer">
+				<a href="javascript:;"> 	<i class="iconfont icon-denglu-copy"> </i> 我的问答</a>
+				
+			</div>
+		</div>
+	</div>
+
+	<!--问题列表-->
+	<div class="doctor-box">
+		<div class="container">
+			<div class="bread">
+                <span class="bread-icon green"><i class="iconfont icon-shouyeshouye"></i></span>
+                <a href="javascript:;" class="green">首页</a>
+                <a href="javascript:;" class="green gt">&gt;</a>
+                <a href="javascript:;" class="green">科室分类</a>
+                <a href="javascript:;" class="gt">&gt;</a>
+                <a href="javascript:;">问题列表</a>
+            </div>
+            <!--问题列表-->
+            <div class="question-main clearfix">
+            		<div class="question-xq-box left">
+            			<div class="question-list-sort clearfix">
+            				<a href="javascript:;">脊柱畸形</a>
+            				<a href="javascript:;">背部疼痛</a>
+            				<a href="javascript:;">骨蒸</a>
+            				<a href="javascript:;">脊椎综合症</a>
+            				<a href="javascript:;">颈强直</a>
+            				<a href="javascript:;">股骨头坏死</a>
+            				<a href="javascript:;">股骨头坏死</a>
+            				<a href="javascript:;">颈椎病</a>
+            				<a href="javascript:;">腰间盘突出</a>
+            				<a href="javascript:;">骨折</a>
+            				<a href="javascript:;">骨质增生</a>
+            			</div>
+						<!--问题列表-->
+						<div class="hot-question-left">
+							<div class="clearfix hot-question-tab-box">
+								<div class="hot-question-tab">
+									<a href="javascript:;" class="active">全部问题</a>
+									<a href="javascript:;" class="">待解决问题</a>
+									<a href="javascript:;" class="">已解决问题</a>
+								</div>
+								
+							</div>
+					
+							<div class="hot-question-con">
+								<ul>
+									<li class="clearfix">
+										<div class="hot-question-pic left"><a href="javascript:;"><img src="img/doc02.png" alt=""></a></div>
+										<div class="hot-question-text left">
+											<a href="javascript:;" class="hot-question-text-in">
+												<h3 class="hot-question-name">笑笑长乐</h3>
+												<p class="hot-question-dec font-sl">朋友家的宝宝刚54天，常听朋友说宝宝肚子呼噜呼噜的响是怎么回事...</p>
+											</a>
+											<div class="hot-question-tips-box clearfix">
+												<div class="left hot-question-tips">
+													<a href="javascript:;"><span>腰间盘突出</span></a>
+													<a href="javascript:;"><span>神经科</span></a>
+												</div>
+												<div class="right hot-question-time">
+													<span class="offer"><i class="iconfont icon-icon1"></i>15</span>
+													<span class="offer">15回答</span>
+													<span class="time">2016-2-17  9:10</span>
+												</div>
+											</div>
+											
+										</div>
+									</li>
+									<li class="clearfix">
+										<div class="hot-question-pic left"><a href="javascript:;"><img src="img/doc02.png" alt=""></a></div>
+										<div class="hot-question-text left">
+											<a href="javascript:;" class="hot-question-text-in">
+												<h3 class="hot-question-name">笑笑长乐</h3>
+												<p class="hot-question-dec font-sl">朋友家的宝宝刚54天，常听朋友说宝宝肚子呼噜呼噜的响是怎么回事...</p>
+											</a>
+												<div class="hot-question-tips-box clearfix">
+													<div class="left hot-question-tips">
+														<a href="javascript:;"><span>腰间盘突出</span></a>
+														<a href="javascript:;"><span>神经科</span></a>
+													</div>
+													<div class="right hot-question-time">
+														<span class="offer"><i class="iconfont icon-icon1"></i>15</span>
+														<span class="time">2016-2-17  9:10</span>
+													</div>
+												</div>
+											
+										</div>
+									</li>
+									<li class="clearfix">
+										<div class="hot-question-pic left"><a href="javascript:;"><img src="img/doc02.png" alt=""></a></div>
+										<div class="hot-question-text left">
+											<a href="javascript:;" class="hot-question-text-in">
+												<h3 class="hot-question-name">笑笑长乐</h3>
+												<p class="hot-question-dec font-sl">朋友家的宝宝刚54天，常听朋友说宝宝肚子呼噜呼噜的响是怎么回事...</p>
+											</a>
+											<div class="hot-question-tips-box clearfix">
+												<div class="left hot-question-tips">
+													<a href="javascript:;"><span>儿科</span></a>
+													<a href="javascript:;"><span>神经科</span></a>
+												</div>
+												<div class="right hot-question-time">
+													<!--<span class="offer"><i class="iconfont icon-icon1"></i>15</span>-->
+													<span class="time">2016-2-17  9:10</span>
+												</div>
+											</div>
+											
+										</div>
+									</li>
+									<li class="clearfix">
+										<div class="hot-question-pic left"><a href="javascript:;"><img src="img/doc02.png" alt=""></a></div>
+										<div class="hot-question-text left">
+											<a href="javascript:;" class="hot-question-text-in">
+												<h3 class="hot-question-name">笑笑长乐</h3>
+												<p class="hot-question-dec font-sl">朋友家的宝宝刚54天，常听朋友说宝宝肚子呼噜呼噜的响是怎么回事...</p>
+											</a>
+												<div class="hot-question-tips-box clearfix">
+													<div class="left hot-question-tips">
+														<a href="javascript:;"><span>儿科</span></a>
+														<a href="javascript:;"><span>神经科</span></a>
+													</div>
+													<div class="right hot-question-time">
+														<!--<span class="offer"><i class="iconfont icon-icon1"></i>15</span>-->
+														<span class="time">2016-2-17  9:10</span>
+													</div>
+												</div>
+											
+										</div>
+									</li>
+									
+								</ul>
+								<!--分页-->
+								<div class="page-wrap">
+			                           <div> 
+			                           	<span class="totle-page">共8页</span>
+			                           	<a class="prev" href="javascript:;">上一页</a> 
+			                           	<a class="num" href="javascript:;">1</a>
+			                           	<span class="current">2</span>
+			                           	<a class="num" href="javascript:;">3</a>
+			                           	<a class="num" href="javascript:;">4</a> 
+			                           	<a class="next" href="javascript:;">下一页</a> 
+			                           </div>                                
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					
+					<!--推荐-->
+					<div class="right recommend-box">
+						<div class="recommend-doctor recommend-item">
+							<h2 class="recommend-title">推荐医生</h2>
+							<ul class="recommend-doctor-list">
+								<li>
+									<a href="javascript:;">
+										<dl class="clearfix">
+											<dt class="left"><img src="img/ad1.png"/></dt>
+											<dd class="left">
+												<span class="font-sl">武磊</span>
+												<span class="font-sl blue">外科医师</span>
+												<p class="font-sl">擅长脊椎病、腰间盘突出</p>
+											</dd>
+										</dl>
+										
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<dl class="clearfix">
+											<dt class="left"><img src="img/ad1.png"/></dt>
+											<dd class="left">
+												<span class="font-sl">武磊</span>
+												<span class="font-sl blue">外科医师</span>
+												<p class="font-sl">擅长脊椎病、腰间盘突出</p>
+											</dd>
+										</dl>
+										
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;" class="border-none">
+										<dl class="clearfix">
+											<dt class="left"><img src="img/ad1.png"/></dt>
+											<dd class="left">
+												<span class="font-sl">武磊</span>
+												<span class="font-sl blue">外科医师</span>
+												<p class="font-sl">擅长脊椎病、腰间盘突出</p>
+											</dd>
+										</dl>
+										
+									</a>
+								</li>
+							</ul>
+							
+						</div>
+						<!--相关问题-->
+						<div class="recommend-question recommend-item">
+							<h2 class="recommend-title">相关问题</h2>
+							<ul class="recommend-question-list">
+								<li><a href="javascript:;" class="font-sl">脖子扬起来后边的骨头疼怎么回事？</a></li>
+								<li><a href="javascript:;" class="font-sl">喝酒脖子后边疼？</a></li>
+								<li><a href="javascript:;" class="font-sl">脖子后边大骨头处疼痛做了磁共...？</a></li>
+								<li><a href="javascript:;" class="font-sl">左后边的腰部骨头很疼是怎么回事？</a></li>
+								<li><a href="javascript:;" class="font-sl">小孩脖子后边骨头里痒痒是怎么回事?</a></li>
+							</ul>
+						</div>
+						<div class="hot-question-ad-item">
+							<a href="javascript:;">
+								<img src="img/ad3.png" alt="" />
+								<p class="ad-text">宠物医疗你值得信赖</p>
+							</a>
+						</div>
+					</div>
+            </div>
+			
+		</div>
+	</div>
+	<!--footer-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-top clearfix">
+				<a href="javascript:;">首页</a>
+				<a href="javascript:;">公司简介</a>
+				<a href="javascript:;">在线帮助</a>
+				<a href="javascript:;">渠道招商</a>
+				<a href="javascript:;">定制服务</a>
+				<a href="javascript:;" class="border-right-none">升级计划</a>
+			</div>
+			<div class="footer-bot">
+				<p>Copyright 2010-2015 All Rights Reserved. 苏ICP备123123123号-1（苏）医广[2012]第12-17-659号 苏卫网审（2011）174号</p>
+				<p>全国统一客服电话：400-622-2972</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<script src="js/jquery-1.11.2.min.js"></script>  
+<script src="plug/layer/layer.js"></script>
+<script src="js/globle.js"></script>
+<script src="js/content-public.js"></script>

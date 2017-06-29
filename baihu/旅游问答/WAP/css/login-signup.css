@@ -1,0 +1,258 @@
+/*登录/注册切换*/
+.logn-search-box {
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+.logn-quan {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+.logn-shade {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2bb772;
+    opacity: 0.8;
+    z-index: 1000;
+}
+.logn-search,.login-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1002;
+    text-align: center;
+    width: 100%;
+    margin-top: 3.5rem;
+}
+.logn-search .logn-search-title {
+    font-weight: 900;
+    color: #fff;
+    line-height: 0.6rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 2.2rem;
+}
+.logn-search .logn-search-title h1 ,.logn-quan h1{
+    font-size: 0.53rem;
+}
+.logn-search .logn-search-title h2 {
+    font-size: 0.4rem;
+}
+.logn-search-btn span {
+    width: 2.6rem;
+    height: 1rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.logn-search-btn .logn-btn{
+    background-image: url("../images/login/login-btn.png");
+    margin-right: 0.3rem;
+}
+.logn-search-btn .signup-btn {
+    background-image: url("../images/login/sign-btn.png");
+}
+
+
+/*第三方登陆*/
+.other-login-tit{
+    height:0.52rem;
+    background: url("../images/login/other-three.png") center center no-repeat;
+    -webkit-background-size:contain;
+    background-size:contain;
+    margin-top: 2.2rem;
+}
+.other-login-line{
+    text-align: center;
+    padding: 0.4rem 0;
+}
+.other-login-line a{
+    width:0.66rem;
+    height:0.66rem;
+    line-height:0.66rem;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    margin:0 0.3rem;
+    font-size:0.3rem;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+}
+.other-login-line a .iconfont{
+    font-size:0.4rem;
+}
+
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+     .other-login-tit {
+        height: 0.52rem;
+        background: url("../images/login/other-three.png") center center no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+        margin-top: 0.2rem;
+
+    }
+}
+
+
+
+/*登录*/
+.wel-title {
+    position: absolute;
+    /*height: auto;*/
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    color: #5cc893;
+    text-align: center;
+    margin: 1.7rem auto;
+    font-size: 0.66rem;
+}
+.wel-title h1 {
+    text-align: center;
+}
+
+.login-box{
+    width: 380px;
+    min-height: 400px;
+}
+
+.login-box-left{
+    text-align: center;
+    width: 100%;
+}
+.login-box-left-t h2,.reg-box-left-t h2{
+
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.login-step dl{
+    border-radius: 6px;
+    height: 40px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: #5cc893;
+    -webkit-transition: box-shadow 0.3s ;
+    -moz-transition: box-shadow 0.3s;
+    -ms-transition: box-shadow 0.3s ;
+    -o-transition: box-shadow 0.3s ;
+    transition: box-shadow 0.3s ;
+
+}
+.login-step .iconfont {
+    font-size: 20px;
+    color: #fff;
+    line-height: 35px;
+}
+.login-step .left {
+    float: left;
+    line-height: 40px;
+}
+.login-step .left input {
+    width: 259px;
+    height: 100%;
+    border: 0px;
+    outline:none;
+    font-size: 16px;
+    background-color: #5cc893;
+}
+.login-step dl.active,.reg-step dl dd input.active{
+
+    border: 1px solid #fcc670;
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,.1);
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+}
+.login-step dl dt{
+
+    width: 45px;
+    height: 40px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.forget-l {
+    float: left;
+    position: relative;
+    left: 37px;
+    padding-left: 10px;
+    line-height: 24px;
+    font-size: 13px;
+    color: #000;
+    width: 100px;
+}
+.js-checkbox {
+    left: 0;
+    top: 50%;
+    margin-top: -7px;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #fda61a;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+}
+.js-checkbox.active{
+    background:#fda61a url("../images/gou.png") 0 0 no-repeat;
+}
+form a {
+    /*float: right;*/
+    /*font-size: 12px;*/
+    color: #fda61a;
+}
+
+.login-box-left-t .login-btn {
+    width: 3.5rem;
+    height: 0.9rem;
+    line-height: 53px;
+    text-align: center;
+    color: #fff;
+    background: url(../images/login/login.png) no-repeat;
+    font-family: "microsoft yahei";
+    background-size: 100% 100%;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin-top: 0.4rem;
+    margin-right: 1.7rem;
+    outline:none;
+}
+
+.other-login-btn .iconfont {
+    font-size: 26px;
+    padding: 11px 18px;
+}
+.login-box-left-b p {
+    color: #000;
+    margin: 10px 0;
+}
+.other-login-btn {
+    margin-bottom: 10px;
+}
+.login-box-left-b .blue {
+    color: #fda61a;
+}
+.login-box-left-b {
+    height: 130px;
+}
+.forget .blue {
+    margin-right: 30px;
+}
+

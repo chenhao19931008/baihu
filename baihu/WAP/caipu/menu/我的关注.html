@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="../css/star-rating-svg.css">
+	<link rel="stylesheet" href="../assets/css/amazeui.min.css" />
+	<link rel="stylesheet" type="text/css" href="../layer/css/layer.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" href="../isscroll/two.css">
+	<script src="../assets/js/jquery-1.11.1.js"></script>
+	<!--<![endif]-->
+	<script src="../layer_mobile/layer.js"></script>
+	<script src="../assets/js/amazeui.min.js"></script>
+	<script src="../assets/js/app.js"></script>
+	<script type="text/javascript" src="../js/style.js"></script>
+	<script src="../js/jquery.star-rating-svg.js"></script>
+	<style type="text/css">
+		/*.layui-layer-btn a{
+			font-size: 0.52rem;
+			line-height: 1rem;
+		}*/
+	</style>
+</head>
+<body>
+	<nav class="pl_nav fans_nav">
+		<div class="dq_bac">
+			<a href="javascript:" onclick="self.location=document.referrer;">
+				<img class="dq_back" src="../img/back.png">
+			</a>
+		</div><!-- 
+         --><span>我的关注</span><!-- 
+         --><div class="dq_bac right">
+			<a href="javascript:h_s()">
+				<img class="dq_back" src="../img/add.png">
+			</a>
+			<ul class="i_xl i_xlk1 fans_nav_ul">
+				<a href="" class="i_index">
+					<li>首页</li>
+				</a>
+				<a href="" class="i_message">
+					<li>消息</li>
+				</a>
+				<a href="" class="i_center">
+					<li>个人中心</li>
+				</a>
+				<a href="" class="i_quite">
+					<li>退出</li>
+				</a>
+			</ul>
+		</div>
+	</nav>
+	<div class="follow_tab">
+		<ul class="follow_ul">
+			<li>我关注的人</li>
+			<li>我关注的圈子</li>
+		</ul>
+		<div class="follow_line"></div>
+	</div>
+	<section class="fans_list fans_list0">
+		<ul class="fans_ul">
+			<li class="fans_ul_li">
+				<a href="">
+					<dl class="list_left list_dl">
+						<dt>
+							<img class="fans_tx" src="../img/people.png">
+						</dt><!-- 
+						 --><dd>
+							<h4>柠檬茶</h4>
+							<ul class="list_count">
+								<li class="cp_count">21菜谱</li>
+								<li class="gz_count">115关注</li>
+								<li class="fs_count">47粉丝</li>
+							</ul>
+						</dd>
+					</dl>
+				</a>
+				<div class="list_right">
+					<span class="fans_btn active">已关注</span>
+				</div>
+			</li>
+			<li class="myMessage_list_li">
+				<a href="">
+					<dl class="list_dl myMessage_dl">
+						<dt>
+							<img class="myMessage_tx" src="../img/people.png">
+						</dt><!-- 
+						 --><dd>
+							<h4 class="concern_tit">一人食</h4>
+							<p class="myMessage_message concern_message">您好
+							您好您好您好您好您好您好您好您好您好您好您好您好您好您好您好您好您好您好您好您好您好您好您好您好您好您好您好您好您好您好您好您好您好您好您好您好您好您好您好</p>
+						</dd>
+					</dl>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<div class="end">
+		<p class="end_text">END</p>
+	</div>
+	<script src="../isscroll/Scrollload.js"></script>
+	<script type="text/javascript">
+
+
+		function add(content,dom){
+		var count = 1;
+		new Scrollload(document.querySelector('body'),function(sl) {
+		    	setTimeout(function () {
+		    	sl.unLock();
+	            if (count++ < 6) {
+	                content.append("0");
+	                sl.unLock();
+	            } else {
+	                sl.noData();
+	            }
+	        }, 500);
+
+
+		        // 我这里用jquery的不是因为需要jquery，只是jquery的语法看起来比较简单。大家都认识。
+		        // 如果你不是用jquery，可以看看原生的insertAdjacentHTML方法来替代append
+		        // $.ajax({
+		        //     type: 'GET',
+		        //     url: `http://rap.taobao.org/mockjsdata/14522/getgamelist?page=${page++}`,
+		        //     dataType: 'json',
+		        //     success: function(data){
+		        //         // contentDom其实就是你的scrollload-content类的dom
+		        //         $(sl.contentDom).append(data)
+
+		        //         // 处理完业务逻辑后必须要调用unlock
+		        //         sl.unLock()
+		        //     },
+		        //     error: function(xhr, type){
+		        //         // 加载出错，需要执行该方法。这样底部DOM会出现出现异常的样式。
+		        //         sl.throwException()
+		        //     }
+		        // })
+		    // 你也可以关闭下拉刷新
+		    // enablePullRefresh: true,
+		    // pullRefresh: function (sl) {
+		    //     $.ajax({
+		    //         type: 'GET',
+		    //         url: `http://rap.taobao.org/mockjsdata/14522/getgamelist?page=1`,
+		    //         dataType: 'json',
+		    //         success: function(data){
+		    //             $(sl.contentDom).prepend(data)
+
+		    //             // 处理完业务逻辑后必须要调用refreshComplete
+		    //             sl.refreshComplete()
+		    //         }
+		    //     })
+		    // }
+		})
+	}
+
+		function back(n){
+		layer.open({
+		    content: '是否取消关注？'
+		    ,btn: ['否', '是']
+		    ,no: function(index){
+		    	n.html("+关注");
+				n.removeClass("active");
+		      layer.close(index);
+		    }
+		    ,yes:function(){
+		    	alert("否")
+		    	layer.close(index);
+		    }
+  		})
+	}
+
+
+
+	$(".fans_btn").each(function(){
+		$(this).click(function(){
+			if($(this).html() === "已关注"){
+				var n = $(this);
+				back(n);
+			}
+			else{
+				$(this).html("已关注");
+				$(this).addClass("active");
+			}
+		})
+	})
+	add($('.fans_ul'));
+
+	$(".follow_ul li").each(function(){
+		$(this).click(function(){
+			$(".follow_line").animate({"left":50*$(this).index()+5+"%"},200);
+			$(".fans_list").css("display","none");
+			$(".fans_list"+$(this).index()).css("display","block");
+		})
+	})
+</script>
+</body>
+</html>

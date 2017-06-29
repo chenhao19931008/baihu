@@ -1,0 +1,277 @@
+<!DOCTYPE>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--字体文件-->
+	<link rel="stylesheet" href="../font/iconfont.css" />
+	<!--初始化CSS-->
+	<link rel="stylesheet" href="../css/reset.css" />
+	<!--首页-->
+	<link rel="stylesheet" href="../css/index.css" />
+	<!-- 个人中心 -->
+	<link rel="stylesheet" href="../css/personal.css" />
+</head>
+<body>
+<!--头部共有-->
+	<div class="lv_header">
+		<div class="container clearfix">
+			<span class="left">欢迎来到白狐旅游问答系统</span>
+			<span class="right"><i class="iconfont icon-dianhua"></i> 客服热线  <span class="phone-num"> 400-622-2976</span></span>
+		</div>
+	</div>
+	<!--搜索-->
+	
+	<div class="lv_search_wrap">
+		<div class="container">
+			<div class="clearfix lv_search">
+				<!--logo-->
+				<div class="lv_logo left">
+					<a href="index.html"><h1><img src="../images/logo.png" alt="" /></h1></a>
+				</div>
+				<!--搜索框-->
+				<div class="lv_search_input left">
+					<div class="lv_search_input_in clearfix">
+						<input type="text" placeholder="提问前请先搜索，看你的问题其他小伙伴有没有问过" class="lv_search_input_in_text left"/>
+						<button type="submit" class="lv_search_input_in_btn right"><i class="iconfont icon-iconfontsousuo"></i></button>
+					</div>
+				</div>
+				<!--我要提问-->
+				<div class="right lv_search_ask">
+					<a href="javascript:;" class="">我要提问</a>
+				</div>
+				
+			</div> 
+		</div>
+	</div> <!--lv_search_wrap-->
+	<!-- 内容 -->
+	<div class="lv_nav-wrap">
+		<div class="lv_nav_in">
+			<div class="container clearfix">
+				<div class="left lv_nav_in_left">
+					<div class="lv_nav_in_left_title">
+						<i class="iconfont icon-fenlei"></i>
+						<span class="lv_yellow">标签分类</span>
+					</div>
+			
+				</div>
+				<div class="left lv_nav_in_mid clearfix">
+					<a href="index.html">首页</a>
+					<a href="pathfinder.html">指路人</a>
+                    <a href="strategy.html">攻略</a>
+					<a href="javascript:;">帮助中心</a>
+					<a href="javascript:;">购买源码</a>
+					<a href="javascript:;">更多</a>	
+				</div>
+				<div class="right lv_nav_in_right">
+					<div class="lv_no_login clearfix lv_login_status">
+						<div class="left lv_no_login_icon">
+							<a href="javascript:;"><i class="iconfont icon-unie61d"></i></a>
+							<a href="javascript:;"><i class="iconfont icon-qq"></i></a>
+							<a href="javascript:;"><i class="iconfont icon-weixin"></i></a>
+						</div>
+						<div class="right lv_no_login_btn">
+							<a href="login.html">登录</a>
+
+							<a href="signup.html">注册</a>
+						</div>
+					</div>
+					<!--已登录-->
+					<div class="lv_logined lv_login_status active clearfix">
+						<a href="message.html" class="lv_logined_message left">消息</a>
+						<a href="mine-friend.html" class="lv_logined_pic left"><img src="../images/1.png" alt=""></a>
+
+						<ul class="lv_logined_list">
+							<li><a href="mine.html"><i class="login_icon"></i>我的回答</a></li>
+							<li><a href="mine-friend.html"><i class="login_icon login_icon_friend"></i>我的好友</a></li>
+							<li><a href="javascript:;"><i class="login_icon login_icon_sc"></i>我的收藏</a></li>
+							<li><a href="personal-message.html"><i class="login_icon login_icon_set"></i>设置</a></li>
+							<li><a href="javascript:;" class="border_none"><i class="login_icon login_icon_close"></i>退出</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="personal-content">
+	     <div class="person-container">
+	         <div class="message-left">
+	              <ul>
+	                  <li><a href="personal-message.html"><i class="iconfont icon-wode"></i>我的信息</a></li>
+	                  <li class="active"><a href="personal-head.html"><i class="iconfont icon-common-xiangji-copy"></i>我的头像</a></li>
+	                  <li><a href="personal-set.html"><i class="iconfont icon-citie"></i>绑定设置</a></li>
+	                  <li><a href="personal-safe.html"><i class="iconfont icon-anquan"></i>账号安全</a></li>
+	                   <li><a href="personal-way.html"><i class="iconfont icon-anquan"></i>指路人认证</a></li>
+	              </ul>
+	         </div>
+	         <div class="my-message">
+	               <div class="message-content">
+	                   <h2>我的头像</h2>
+	                   <div class="upload">
+	                       <div class="upload-jia">
+	                            <span class="jia1"></span>
+	                            <span class="jia2"></span>
+	                       </div>
+	                       <div class="choose-upload">
+	                            <span>
+                                    <div class="new-contentarea tc">
+                                        <a href="javascript:void(0)" class="upload-img">
+                                            <label for="upload-file">选择图片</label>
+                                        </a>
+                                        <input type="file" class="" name="upload-file" id="upload-file" />
+                                    </div>
+                                </span>
+	                            <p>支持jpg、png、jpeg、bmp，图片大小5M以内</p>
+	                       </div>
+
+                           <!--图片剪裁-->
+                           <div class="img-container">
+                               <div class="imageBox">
+                                   <div class="thumbBox"></div>
+                                   <div class="spinner" style="display: none">Loading...</div>
+                               </div>
+                               <div class="action">
+                                   <input type="button" id="btnCrop"  class="Btnsty_peyton" value="裁切">
+                                   <input type="button" id="btnZoomIn" class="Btnsty_peyton" value="+"  >
+                                   <input type="button" id="btnZoomOut" class="Btnsty_peyton" value="-" >
+                               </div>
+                               <div class="cropped"></div>
+                               <div class="upload-footer">
+                                   <a class="keep" href="javascript:;">保存</a>
+                                   <a class="remove" href="javascript:;">取消</a>
+                               </div>
+                           </div>
+	                   </div>
+	               </div>
+	         </div>
+	     </div>
+	</div>
+	<!--底部共用-->
+	
+	<div class="lv_footer">
+		<div class="container">
+			<ul class="clearfix lv_footer-line">
+				<li><a href="javascript:;">首页</a>|</li>
+				<li><a href="javascript:;">公司简介</a>|</li>
+				<li><a href="javascript:;">在线帮助</a>|</li>
+				<li><a href="javascript:;">渠道招商</a>|</li>
+				<li><a href="javascript:;">定制服务</a>|</li>
+				<li><a href="javascript:;">升级计划</a></li>
+			</ul>
+			<p>Copyright 2010-2015 All Rights Reserved. 苏ICP备123123123号-1（苏）医广[2012]第12-17-659号 苏卫网审（2011）174号</p>
+			<p>全国统一客服电话：400-622-2972</p>
+		</div>
+	</div>
+</body>
+</html>
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/index.js"></script>
+<script src="../plug/layer/layer.js"></script>
+<script src="../js/cropbox.js"></script>
+<script type="text/javascript">
+    $(window).load(function() {
+
+        var options =
+        {
+            thumbBox: '.thumbBox',
+            spinner: '.spinner',
+            imgSrc: 'img/avatar.jpg',
+            imageBox: 'imageBox'
+        }
+        var cropper = $('.imageBox').cropbox(options);
+        $('#upload-file').on('change', function(){
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                options.imgSrc = e.target.result;
+                cropper = $('.imageBox').cropbox(options);
+            }
+            reader.readAsDataURL(this.files[0]);
+            this.files = [];
+        })
+        $('#btnCrop').on('click', function(){
+            var img = cropper.getDataURL();
+            $('.cropped').html('');
+            $('.cropped').append('<img src="'+img+'" align="absmiddle" class="em" style="width:120px;margin-top:4px;height:120px;box-shadow:0px 0px 12px #7E7E7E;" ><p>120px*120px</p>');
+            $('.cropped').append('<img src="'+img+'" align="absmiddle" class="em" style="width:48px;height:48px;margin-top:4px;box-shadow:0px 0px 12px #7E7E7E;"><p>48px*48px</p>');
+            $('.cropped').append('<img src="'+img+'" align="absmiddle" class="em" style="width:16px;height:16px;margin-top:4px;box-shadow:0px 0px 12px #7E7E7E;"><p>16px*16px</p>');
+        })
+        $('#btnZoomIn').on('click', function(){
+            cropper.zoomIn();
+        })
+        $('#btnZoomOut').on('click', function(){
+            cropper.zoomOut();
+        })
+
+
+        $(".upload-footer .keep").click(function() {
+            $img = $(".cropped img.active").clone();
+            $jia = $(".upload .upload-jia");
+            $jia.empty().html($img);
+            if($jia.find("img").length != 0) {
+                layer.alert('上传成功', {
+                    icon: 1,
+                    offset: '100px',
+                    skin: 'layer-ext-moon'
+                })
+                $(".img-container").css("display","none");
+                $(".step-one .one").text("").css({
+                    "background":"#3ac80e url(../images/gou.png) 0 0 no-repeat"
+                })
+                $(".step-one .one").parent().next().css({
+                    "backgroundColor":"#3ac80e"
+                })
+                $(".upload-jia").hover(function(){
+                    if($(".upload-jia").find("img").length != 0){
+                        $(".upload-jia .delet").remove();
+                        $(".upload-jia").append("<span class=delet>×</span>");
+                    }
+                },function(){
+                    $(".upload-jia .delet").remove();
+                })
+                $(".upload-jia .delet").remove();
+               $(document).on("click",".upload-jia .delet",function(){
+                   layer.confirm('确定要删除图片吗？', {
+                       offset: '100px',
+                       btn: ['确定','取消'] //按钮
+                   }, function(){
+                       $jia.empty();
+                       $jia.append("<span class=jia1></span>");
+                       $jia.append("<span class=jia2></span>");
+                       layer.msg('已删除', {
+                           icon: 1,
+                           offset: '100px',
+                           time: 1500
+                       });
+                   })
+
+               })
+            }else {
+                $jia.append("<span class=jia1></span>");
+                $jia.append("<span class=jia2></span>");
+                layer.alert('请选择图片！', {
+                    icon: 2,
+                    offset: '100px',
+                    skin: 'layer-ext-moon'
+                })
+            }
+            $(".upload .upload-jia img").css({
+                "height": "100%",
+                "width": "100%"
+            })
+        })
+        $(".upload-footer .remove").on("click",function() {
+            $(".img-container").css("display","none");
+        })
+
+
+        $(document).on("click",".cropped img",function(){
+            $(".cropped img").removeClass("active");
+            $(this).toggleClass("active");
+        })
+
+    });
+
+
+</script>
+
+

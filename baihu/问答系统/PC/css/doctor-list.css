@@ -1,0 +1,100 @@
+.navbar-wrap{
+	background: #4c8cd9;
+	height: 46px;
+	line-height: 46px;
+	min-width:1200px;
+}
+.navbar-wrap .navbar-l,.index-my-answer a{
+	height: 46px;
+}
+.navbar-wrap .navbar-l a.title{
+	height: 46px;
+}
+.class-bar-wrap,.index-more-list{
+	top: 46px;
+}
+.index-more span{
+	height: 46px;
+}
+.navbar-wrap .navbar-r a,
+.navbar-wrap .navbar-l a.title,
+.index-more,.index-my-answer a
+{
+	color: #fff;
+}
+ .bread{
+    padding: 28px 0 28px 12px;
+    font-size:14px;
+
+}
+ .bread a{
+    padding:0 5px;
+}
+ .bread .bread-icon i{
+    font-size: 18px;
+}
+.navbar-wrap .navbar-r a:hover{
+	color: #fff;
+}
+
+/*医生列表*/
+.expert-online-content-list{
+	padding: 37px 0 0 0;
+}
+.doctor-sort{
+	border-bottom: 2px solid #2cc327;
+}
+.doctor-sort a{
+	padding: 0 26px;
+	line-height: 42px;
+	text-align: center;
+	float: left;
+	font-size: 14px;
+	margin: 8px 0;
+}
+.doctor-sort a.active,.doctor-sort a:hover{
+	background: #2cc327;
+	color: #fff;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.expert-ask a{
+	width: 86px;
+	margin: 0 4px;
+	background: none;
+	border: 1px solid #dcdcdc;
+	float: left;
+	color: #4c8cd9;
+}
+.expert-ask a:hover{
+	background: #2cc327;
+	color: #fff;
+	border: 1px solid #2cc327;
+}
+.expert-ask a.attentioned{
+	background: #eeeeee;
+	color: #919191;
+}
+.expert-ask a.attentioned:hover{
+	border: 1px solid #dcdcdc;
+	background: #eeeeee;
+}
+.expert-online-content-in{
+	margin: 14px;
+	box-shadow: none;
+	border: 1px solid #dcdcdc;
+}
+.online-title{
+	width: 50px;
+	height: 32px;
+	line-height: 36px;
+	text-align: center;
+	background: url(../img/online-icon.png) no-repeat;
+	position: absolute;
+	right: -8px;
+	top: 25px;
+	z-index: 99;
+	color: #fff;
+	font-size: 14px;
+	
+}

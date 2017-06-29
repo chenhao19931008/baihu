@@ -1,0 +1,332 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!--<meta http-equiv="x-ua-compatible" content="IE=edge">-->
+    <title>个人中心</title>
+    <!--字体文件-->
+    <link rel="stylesheet" href="../font/iconfont.css" />
+    <!--初始化CSS-->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <!--首页-->
+    <link rel="stylesheet" href="../css/index.css" />
+    <!--个人中心-->
+    <link rel="stylesheet" href="../css/personal.css"/>
+</head>
+<body>
+<!--头部共有-->
+<div class="lv_header">
+    <div class="container clearfix">
+        <span class="left">加入菜谱分享系统 开启味蕾的全新旅程</span>
+        <div class="login-sign-before right"><a href="login.html">登录</a>　|　<a href="signup.html">注册</a></div>
+        <div class="login-sign-after right">
+            <a href="javascript:;" class="lv_logined_qian left">签到</a>
+            <a href="javascript:;" class="lv_logined_pic left"><img src="../images/personal/head-none.png" alt=""></a>
+            <ul class="lv_logined_list">
+                <li><a href="personal-menus.html"><i class="iconfont icon-meishi"></i>我的菜谱</a></li>
+                <li><a href="javascript:;"><i class="iconfont icon-lingdang"></i>消息</a></li>
+                <li><a href="javascript:;" class="close_none"><i class="iconfont icon-weibiaoti201"></i>退出</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--搜索-->
+
+<div class="lv_search_wrap">
+    <div class="container">
+        <div class="clearfix lv_search">
+            <!--logo-->
+            <div class="lv_logo left">
+                <a href="index.html"><h1><img src="../images/logo.png" alt="" /></h1></a>
+            </div>
+            <!--搜索框-->
+            <div class="lv_search_input left">
+                <div class="lv_search_input_in clearfix">
+                    <input type="text" placeholder="请输入关键字" class="lv_search_input_in_text left"/>
+                    <button type="submit" class="lv_search_input_in_btn right"><i class="iconfont icon-sousuo"></i></button>
+                </div>
+                <div class="hold-sou">
+                    <span class="hold-remen">热门搜索 : </span>
+                    <span><a href="javascript:;">宫保鸡丁</a></span>
+                    <span><a href="javascript:;">醋溜土豆丝</a></span>
+                    <span><a href="javascript:;">油焖大虾</a></span>
+                    <span><a href="javascript:;">酱爆猪蹄</a></span>
+                    <span><a href="javascript:;">红烧带鱼</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!--lv_search_wrap-->
+<div class="lv_nav-wrap">
+    <div class="lv_nav_in">
+        <div class="lv_nav_left left">
+            <a href="javascript:;">首页</a>
+            <a class="list-con" href="javascript:;">菜谱大全<i class="iconfont icon-circle_down_on"></i></a>
+            <a href="javascript:;">美食专题</a>
+            <a href="javascript:;">食材大全</a>
+            <a href="javascript:;">美食发烧友</a>
+            <a href="javascript:;">视频</a>
+        </div>
+        <div class="c_nav_m">
+            <dl>
+                <dt><a href="javascript:;">家常菜谱</a></dt>
+                <dd>
+                    <a href="javascript:;">快手菜</a>
+                    <a href="javascript:;">凉菜</a>
+                    <a href="javascript:;">早餐</a>
+                    <a href="javascript:;">糕点小吃</a>
+                    <a href="javascript:;">甜品点心</a>
+                    <a href="javascript:;">晚餐</a>
+                    <a href="javascript:;">素食</a>
+                    <a href="javascript:;">私家菜</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a href="javascript:;">中华菜谱</a></dt>
+                <dd>
+                    <a href="javascript:;">京菜</a>
+                    <a href="javascript:;">川菜</a>
+                    <a href="javascript:;">徽菜</a>
+                    <a href="javascript:;">粤菜</a>
+                    <a href="javascript:;">湘菜</a>
+                    <a href="javascript:;">清真菜</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a href="javascript:;">外国料理</a></dt>
+                <dd>
+                    <a href="javascript:;">韩国料理</a>
+                    <a href="javascript:;">日本料理</a>
+                    <a href="javascript:;">法国大餐</a>
+                    <a href="javascript:;">意大利美食</a>
+                    <a href="javascript:;">异国料理</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a href="javascript:;">烘培糕点</a></dt>
+                <dd>
+                    <a href="javascript:;">面包</a>
+                    <a href="javascript:;">蛋糕</a>
+                    <a href="javascript:;">土司</a>
+                    <a href="javascript:;">饼干</a>
+                    <a href="javascript:;">月饼</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a href="javascript:;">厨房百科</a></dt>
+                <dd>
+                    <a href="javascript:;">烹饪技巧</a>
+                    <a href="javascript:;">食材加工</a>
+                    <a href="javascript:;">厨具选购</a>
+                    <a href="javascript:;">美食DIY</a>
+                </dd>
+            </dl>
+            <span class="c_nav_pic"></span>
+        </div>
+        <div class="lv_nav_right right">
+            <a href="javascript:;"><i class="iconfont icon-fabu"></i>发布菜谱</a>
+        </div>
+    </div>
+</div>
+<div id="lv_main">
+    <div class="lv__main_container">
+        <div class="personal_main_left left">
+            <div class="personal_tab_top">
+                <img src="../images/personal/person-list.png" alt=""/>
+                <div class="person_head_box">
+                    <div class="person_tab_head">
+                        <a href="javascript:;">
+                            <div class="head_person_img">
+                                <img src="../images/personal/head-none.png" alt=""/>
+                            </div>
+                            <div class="person_tab_text">物与人</div>
+                        </a>
+                    </div>
+                    <h2>你我他是陌生人，自然是主宰的主宰</h2>
+                    <div class="clearfix flow_list_item_number">
+                        <div class="flow_list_item_name left">
+                            <a href="javascript:;">
+                                <span class="flow_num">0</span>
+                            </a>
+                            <p>菜谱</p>
+                        </div>
+                        <div class="flow_list_item_name left">
+                            <a href="javascript:;">
+                                <span class="flow_num">13</span>
+                            </a>
+                            <p>关注</p>
+                        </div>
+                        <div class="flow_list_item_name left">
+                            <a href="javascript:;">
+                                <span class="flow_num">0</span>
+                            </a>
+                            <p>粉丝</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="personal_tab_bottom">
+                <div class="personal_bottom_box">
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="person_box_bord">
+                                    <dl class="person_box_list">
+                                        <dt class="left">
+                                            <i class="iconfont icon-meishi"></i>
+                                        </dt>
+                                        <dd class="left">我的菜谱</dd>
+                                    </dl>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <dl class="person_box_list">
+                                    <dt class="left">
+                                        <i class="iconfont icon-huatifill"></i>
+                                    </dt>
+                                    <dd class="left">我的话题</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <dl class="person_box_list">
+                                    <dt class="left">
+                                        <i class="iconfont icon-shoucang"></i>
+                                    </dt>
+                                    <dd class="left">我的收藏</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <dl class="person_box_list">
+                                    <dt class="left">
+                                        <i class="iconfont icon-pig"></i>
+                                    </dt>
+                                    <dd class="left">我的积分</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <dl class="person_box_list">
+                                    <dt class="left">
+                                        <i class="iconfont icon-lingdang"></i>
+                                    </dt>
+                                    <dd class="left">我的消息</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <dl class="person_box_list">
+                                    <dt class="left">
+                                        <i class="iconfont icon-yanjing"></i>
+                                    </dt>
+                                    <dd class="left">我的关注</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <dl class="person_box_list">
+                                    <dt class="left">
+                                        <i class="iconfont icon-xin-1"></i>
+                                    </dt>
+                                    <dd class="left">我的粉丝</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="javascript:;">
+                                <dl class="person_box_list">
+                                    <dt class="left">
+                                        <i class="iconfont icon-iconziti09"></i>
+                                    </dt>
+                                    <dd class="left">设置</dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="personal_main_right right">
+            <div class="person_content_head">
+                <div class="person_head_list left">
+                    <a href="personal-set.html">个人信息</a>
+                    <a class="active" href="personal-safe.html">修改密码</a>
+                    <a href="personal-bind.html">账号绑定</a>
+                    <a href="personal-head.html">更改头像</a>
+                </div>
+            </div>
+            <div class="personal_set_container">
+                <div class="message-content">
+                    <form action="#">
+                        <div class="reg-step">
+                            <dl class="clearfix ">
+                                <dt class="left">旧密码:</dt>
+                                <dd class="left"><input type="password" placeholder="请输入旧密码" id="mima-mes"/></dd>
+                            </dl>
+                        </div>
+                        <div class="reg-step">
+                            <dl class="clearfix ">
+                                <dt class="left">新密码:</dt>
+                                <dd class="left"><input type="password" placeholder="请输入新密码" id="reg_pass"/></dd>
+                            </dl>
+                        </div>
+                        <div class="reg-step">
+                            <dl class="clearfix ">
+                                <dt class="left">确认密码:</dt>
+                                <dd class="left"><input type="password" placeholder="请再次输入新密码" id="reg_pass_again"/></dd>
+                            </dl>
+                        </div>
+                        <input type="button" value="保存" class="message-content-keep"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--底部共用-->
+<div class="footer_box">
+    <div class="lv_footer">
+        <div class="container">
+            <ul class="clearfix lv_footer-line lv_footer-line-top">
+                <li>友情链接 ：</li>
+                <li><a href="javascript:;">白狐影视导航系统</a></li>
+                <li><a href="javascript:;">白狐微信公众号助手</a></li>
+                <li><a href="javascript:;">白狐问答系统</a></li>
+                <li><a href="javascript:;">白狐菜谱分享系统</a></li>
+                <li><a href="javascript:;">白狐软件</a></li>
+            </ul>
+            <ul class="clearfix lv_footer-line lv_footer-line-bottom">
+                <li><a href="javascript:;">关于白狐菜谱分享系统</a></li>
+                <li><a href="javascript:;">关于白狐</a></li>
+                <li><a href="javascript:;">服务宗旨</a></li>
+                <li><a href="javascript:;">选择白狐</a></li>
+                <li><a href="javascript:;">定制服务</a></li>
+                <li><a href="javascript:;">购买源码</a></li>
+                <li><a href="javascript:;">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="cont-p">
+        <p>Copyright 2010-2015 All Rights Reserved. 苏ICP备16047569号-1</p>
+    </div>
+</div>
+</body>
+</html>
+<script src="../js/jquery-3.1.0.min.js"></script>
+<!--<script src="../js/banner.js"></script>-->
+<script src="../plug/layer/layer.js"></script>
+<script src="../js/register_login.js"></script>
+<script src="../js/index.js"></script>
+
+
+
+

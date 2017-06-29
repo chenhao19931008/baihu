@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>搜索</title>
+    <!--rem布局-->
+    <script src="js/reset_font.js"></script>
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/global.css">
+    <!--<link rel="stylesheet" href="css/question-list.css">-->
+</head>
+<body style="background-color: #fff;">
+
+<div id="main">
+
+    <!--头部-->
+    <div class="m-head public-head">
+        <!--搜索按钮-->
+        <a href="javascript:;" class="back"><span class="back-icon"></span></a>
+        <!--标题-->
+       <div class="search-box">
+           <div class="search-box-in m-flex-box">
+               <span class="iconfont icon-icon search-box-in-l"></span>
+                <div class="m-flex">
+                    <form action="#">
+                        <input type="text" id="search">
+                    </form>
+                </div>
+                <span class="search-box-in-r js-clear"><i class="iconfont icon-guanbi"></i></span>
+           </div>
+
+       </div>
+        <a href="javascript:;" class="public-right-btn js-qx">取消</a>
+    </div>
+    <!--数据-->
+    <div class="search-data">
+        <ul class="search-data-list">
+            <li>
+                <a href="javascript:;">
+                    <h3> 强迫症有可能治愈吗？</h3>
+                    <p class="search-data-time">
+                        <span>2016.10.2 &nbsp; 10:18</span>
+                        |
+                        <span>2回答</span>
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="search-main">
+        <!--热门搜索-->
+        <div class="hot-search">
+                <div class="m-flex-box hot-search-title flex-vc">
+                    <h2 class="m-flex"><i class="iconfont icon-world"></i>热门搜索</h2>
+                    <a href="javascript:;" class="btn js-change">换一批</a>
+                </div>
+                <div class="hot-search-data">
+                    <ul>
+                        <li><a href="javascript:;">心理障碍怎么治疗最好？</a></li>
+                        <li><a href="javascript:;">肝昏迷怎么办？</a></li>
+                        <li><a href="javascript:;">蒲地蓝消炎口服液100天婴儿用量？</a></li>
+                        <li><a href="javascript:;">肚子难受，呕吐看哪个科室，需要空腹吗？</a></li>
+                        <li><a href="javascript:;">鼻炎怎么治疗？吃什么药好？</a></li>
+                    </ul>
+                </div>
+        </div>
+
+        <!--搜索记录-->
+        <div class="hot-search">
+            <div class="m-flex-box hot-search-title flex-vc">
+                <h2 class="m-flex"><i class="iconfont icon-jilu"></i>搜索记录</h2>
+                <a href="javascript:;" class="js-del-recode"><i class="iconfont icon-shanchu"></i></a>
+            </div>
+            <div class="hot-search-data search-data-recode">
+                <ul>
+                    <li><a href="javascript:;">心理障碍怎么治疗最好？</a></li>
+                    <li><a href="javascript:;">肝昏迷怎么办？</a></li>
+                    <li><a href="javascript:;">蒲地蓝消炎口服液100天婴儿用量？</a></li>
+                    <li><a href="javascript:;">肚子难受，呕吐看哪个科室，需要空腹吗？</a></li>
+                    <li><a href="javascript:;">鼻炎怎么治疗？吃什么药好？</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+</body>
+</html>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="plug/layer_mobile/layer.js"></script>
+<script src="js/main.js"></script>
+<script>
+
+    var data_arr = [
+        {
+            url:"javascript:;",
+            title:"强迫症是什么样的？",
+            time:"2016.10.5 &nbsp;   10:18",
+            num :5
+        },
+        {
+            url:"javascript:;",
+            title:"你吃饭是什么样的？",
+            time:"2016.12.5 &nbsp;   10:18",
+            num :10
+        },
+        {
+            url:"javascript:;",
+            title:"莫名的感到累是怎么回事？",
+            time:"2016.10.5 &nbsp;   10:18",
+            num :56
+        }
+    ];
+
+
+
+
+
+    ;(function(){
+
+        var search_fn = function (inpBox){
+
+            this.inpBox = inpBox;
+
+            this.dataBox = $('.search-data');//数据盒子
+
+            this.clear = $('.js-clear');//删除输入框内容按钮
+
+            this.qx = $('.js-qx');//取消按钮
+
+            this.clearCode = $('.js-del-recode');//删除历史记录
+
+            this.chnageOther  =  $('.js-change');//换一批
+            this.init();
+
+        }
+        search_fn.prototype = {
+            init:function(){
+
+
+                this.changeVal();
+
+                this.event();
+            },
+            changeVal:function(){
+
+                var _this  = this;
+
+                $(this.inpBox).on('input propertychange',function(){
+                         var val  = $(this).val();
+                             var str = "";
+                            if(val!=""){
+                                $('.search-box-in-r').show();
+                            }else{
+                                $('.search-box-in-r').hide();
+                            }
+
+
+                    //  AJAX
+
+//                    $.ajax({
+//
+//                        url:"#",
+//                        type:"post",
+//                        dataType:"json",
+//                        cache:false,
+//                        success:function(data){
+//
+//                        }
+//
+//                    });
+
+
+
+                         $.each(data_arr,function(index,item){
+
+                             var title = item["title"];
+
+                             var url = item["url"];
+
+                                var heightLightFont =title.split(val);
+
+                                var heightLightFont2 = val.split();
+
+                                var  title2 = heightLightFont.join("<span style='color:#f00;'>"+val+"</span>");
+
+
+
+
+                                str +='<li>' +
+
+                                    '<a href="'+url+'">' +
+
+                                    '<h3>'+title2+'</h3>' +
+
+                                    '<p class="search-data-time"> ' +
+
+                                    '<span>'+item["time"]+'</span> ' +
+
+                                    '| <span>'+item["num"]+'</span>' +
+
+                                    '</p>' +
+
+                                    '</a>' +
+
+                                    '</li>';
+
+
+
+                         });
+
+
+                    $('.search-data-list').html(str);
+                        if(val==""){
+                            $(_this.dataBox).hide();
+                        }else{
+                            $(_this.dataBox).show();
+                        }
+
+
+
+                });
+
+            },
+            event:function(){
+                var _this = this;
+                //删除输入的内容
+                    $( this.clear).on('click',function(){
+                        $(this).hide();
+                        $(_this.inpBox).val("");
+                        $(_this.dataBox).hide();
+                    });
+                        //取消搜索
+                    $(this.qx).on('click',function(){
+                        $(_this.clear).hide();
+                        $(_this.inpBox).val("");
+                        $(_this.dataBox).hide();
+
+                    });
+
+
+                    //删除历史记录
+
+                $(this.clearCode).on('click',function(){
+                        layer.open({
+                            content:"确定要清除历史记录吗？",
+                            btn:["确定","取消"],
+                            yes:function(){
+                                $('.search-data-recode ul').empty();
+
+                                layer.open({
+                                    skin:"msg",
+                                    content:"清除完成",
+                                    time:1
+                                });
+                            }
+                        });
+
+                });
+
+             }
+        }
+
+
+        window.search_fn= search_fn;
+
+
+    })();
+    new search_fn('#search');
+</script>

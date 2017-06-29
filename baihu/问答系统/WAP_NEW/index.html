@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>首页</title>
+    <!--rem布局-->
+    <script src="js/reset_font.js"></script>
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="js/isscroll/two.css">
+    <link rel="stylesheet" href="plug/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<!--用户选择-->
+<div class="user-type-choose">
+
+    <h2 class="m-title">用户选择</h2>
+
+    <div class="m-flex-box user-type-btn">
+        <div>
+            <a href="javascript:;">我的医生</a>
+        </div>
+       <div>
+           <a href="javascript:;">我是患者</a>
+       </div>
+
+    </div>
+
+</div>
+
+
+<div id="main">
+
+    <!--头部-->
+    <div class="m-head">
+        <!--搜索按钮-->
+        <a href="javascript:;" class="m-search-icon"></a>
+        <!--标题-->
+        <h2 class="m-title">白狐医疗问答</h2>
+        <div class="m-menu-box m-flex-box">
+            <a href="office-class.html" class="m-menu-line"></a>
+            <a href="person-content-message.html" class="m-message-line"></a>
+        </div>
+    </div>
+    <!--banner-->
+    <div id="index-banner">
+        <div class="swiper-container" id="m-index-banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="javascript:;" class="banner-line">
+                        <img src="img/banner/1.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:;" class="banner-line">
+                        <img src="img/banner/1.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:;" class="banner-line">
+                        <img src="img/banner/1.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- 分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!--导航-->
+    <div class="m-index-nav m-flex-box bot15">
+        <a href="ask.html"><i class="icon-tw"></i>我要提问</a>
+        <a href="doctor-list.html"><i class="icon-wzj"></i>问专家</a>
+        <a href="person-content-qiandao.html"><i class="icon-qd"></i>签到</a>
+    </div>
+    <!--专家在线-->
+    <div class="m-zj-box bot15">
+        <div class="m-zj-top m-flex-box">
+            <h2 class="m-main-title m-flex">专家在线</h2>
+            <a href="javascript:;" class="m-more">更多</a>
+        </div>
+        <!--内容-->
+        <div class="m-online-box">
+            <!-- Swiper -->
+            <div class="swiper-container" id="online">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide online-item">
+                        <div class="online-item-in">
+                            <div class="online-pic">
+                                <a href="javascript:;">
+                                    <img src="img/doc01.png" alt="">
+                                </a>
+                            </div>
+                            <div class="online-con">
+
+                                <a href="javascript:;">
+                                    <div class="online-name">
+                                        <span class="name">李爱华</span>
+                                        <span class="zc blue">主任医师</span>
+                                    </div>
+                                </a>
+                                <p class="line-comp1 dec">高血压冠心病权威专家</p>
+                                <a href="javascript:;" class="zx-btn">咨询</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide online-item">
+                        <div class="online-item-in">
+                            <div class="online-pic">
+                                <a href="javascript:;">
+                                    <img src="img/doc01.png" alt="">
+                                </a>
+                            </div>
+                            <div class="online-con">
+
+                                <a href="javascript:;">
+                                    <div class="online-name">
+                                        <span class="name">李爱华</span>
+                                        <span class="zc blue">主任医师</span>
+                                    </div>
+                                </a>
+                                <p class="line-comp1 dec">高血压冠心病权威专家</p>
+                                <a href="javascript:;" class="zx-btn">咨询</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide online-item">
+                        <div class="online-item-in">
+                            <div class="online-pic">
+                                <a href="javascript:;">
+                                    <img src="img/doc01.png" alt="">
+                                </a>
+                            </div>
+                            <div class="online-con">
+
+                                <a href="javascript:;">
+                                    <div class="online-name">
+                                        <span class="name">李爱华</span>
+                                        <span class="zc blue">主任医师</span>
+                                    </div>
+                                </a>
+                                <p class="line-comp1 dec">高血压冠心病权威专家</p>
+                                <a href="javascript:;" class="zx-btn">咨询</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--问题列表-->
+    <div class="m-index-q bot15">
+        <div class="m-q-top m-flex-box">
+            <div class="m-q-nav m-flex">
+                <a href="javascript:;" class="active">最新问题</a>
+                <a href="javascript:;">热门问题</a>
+            </div>
+            <a href="javascript:;" class="m-more">更多</a>
+        </div>
+        <!--列表-->
+        <div id="question-box">
+            <div class="m-q-list active js-hot-list">
+
+                <ul class="m-q-list-ul">
+                    <li>
+                        <div class="m-flex-box">
+                            <div class="user-pic">
+                                <a href="javascript:;">
+                                    <img src="img/doc02.png" alt="">
+                                </a>
+                            </div>
+                            <div class="m-q-list-con m-flex">
+                                <div class="m-q-list-con-top">
+                                    <a href="javascript:;">
+                                        <span class="q-name">笑笑长乐</span>
+                                        <p class="q-text line-comp1">朋友家的宝宝刚54天，常听朋友说宝宝肚子呼噜呼噜的响是...</p>
+                                    </a>
+                                </div>
+                                <div class="m-q-list-con-bot m-flex-box">
+                                    <div class="m-flex m-q-tips">
+                                        <a href="javascript:;">儿科</a>
+                                    </div>
+                                    <div class="m-q-time">
+                                        <span class="jifen"><i class="jinbin-icon"></i><span>4</span></span>
+                                        <span>|</span>
+                                        <span>2016-2-17</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="m-flex-box">
+                            <div class="user-pic">
+                                <a href="javascript:;">
+                                    <img src="img/doc02.png" alt="">
+                                </a>
+                            </div>
+                            <div class="m-q-list-con m-flex">
+                                <div class="m-q-list-con-top">
+                                    <a href="javascript:;">
+                                        <span class="q-name">笑笑长乐</span>
+                                        <p class="q-text line-comp1">朋友家的宝宝刚54天，常听朋友说宝宝肚子呼噜呼噜的响是...</p>
+                                    </a>
+                                </div>
+                                <div class="m-q-list-con-bot m-flex-box">
+                                    <div class="m-flex m-q-tips">
+                                        <a href="javascript:;">儿科</a>
+                                        <a href="javascript:;">腰间盘突出</a>
+
+                                    </div>
+                                    <div class="m-q-time">
+                                        <span class="jifen"><i class="jinbin-icon"></i><span>4</span></span>
+                                        <span>|</span>
+                                        <span>2016-2-17</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="m-flex-box">
+                            <div class="user-pic">
+                                <a href="javascript:;">
+                                    <img src="img/doc02.png" alt="">
+                                </a>
+                            </div>
+                            <div class="m-q-list-con m-flex">
+                                <div class="m-q-list-con-top">
+                                    <a href="javascript:;">
+                                        <span class="q-name">笑笑长乐</span>
+                                        <p class="q-text line-comp1">朋友家的宝宝刚54天，常听朋友说宝宝肚子呼噜呼噜的响是...</p>
+                                    </a>
+                                </div>
+                                <div class="m-q-list-con-bot m-flex-box">
+                                    <div class="m-flex m-q-tips">
+                                        <a href="javascript:;">儿科</a>
+                                    </div>
+                                    <div class="m-q-time">
+                                        <span class="jifen"><i class="jinbin-icon"></i><span>4</span></span>
+                                        <span>|</span>
+                                        <span>2016-2-17</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="m-q-list js-hot-list">
+
+                <ul class="m-q-list-ul">
+                    <li>
+                        <div class="m-flex-box">
+                            <div class="user-pic">
+                                <a href="javascript:;">
+                                    <img src="img/doc02.png" alt="">
+                                </a>
+                            </div>
+                            <div class="m-q-list-con m-flex">
+                                <div class="m-q-list-con-top">
+                                    <a href="javascript:;">
+                                        <span class="q-name">笑笑长乐</span>
+                                        <p class="q-text line-comp1">朋友家的宝宝刚54天，常听朋友说宝宝肚子呼噜呼噜的响是...</p>
+                                    </a>
+                                </div>
+                                <div class="m-q-list-con-bot m-flex-box">
+                                    <div class="m-flex m-q-tips">
+                                        <a href="javascript:;">儿科</a>
+                                    </div>
+                                    <div class="m-q-time">
+                                        <span class="jifen"><i class="jinbin-icon"></i><span>4</span></span>
+                                        <span>|</span>
+                                        <span>2016-2-17</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="m-flex-box">
+                            <div class="user-pic">
+                                <a href="javascript:;">
+                                    <img src="img/doc02.png" alt="">
+                                </a>
+                            </div>
+                            <div class="m-q-list-con m-flex">
+                                <div class="m-q-list-con-top">
+                                    <a href="javascript:;">
+                                        <span class="q-name">笑笑长乐</span>
+                                        <p class="q-text line-comp1">朋友家的宝宝刚54天，常听朋友说宝宝肚子呼噜呼噜的响是...</p>
+                                    </a>
+                                </div>
+                                <div class="m-q-list-con-bot m-flex-box">
+                                    <div class="m-flex m-q-tips">
+                                        <a href="javascript:;">儿科</a>
+                                        <a href="javascript:;">腰间盘突出</a>
+
+                                    </div>
+                                    <div class="m-q-time">
+                                        <span class="jifen"><i class="jinbin-icon"></i><span>4</span></span>
+                                        <span>|</span>
+                                        <span>2016-2-17</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!--常见问题疾病-->
+    <div class="common">
+        <div class="common-title">
+            <h2 class="m-main-title">常见疾病问题</h2>
+        </div>
+        <div class="common-con">
+            <div class="swiper-container" id="common-nav">
+                <div class="swiper-wrapper" id="common-nav-in">
+                    <a href="javascript:;" class="swiper-slide active">鼻炎</a>
+                    <a href="javascript:;" class="swiper-slide">高血压</a>
+                    <a href="javascript:;" class="swiper-slide">白癜风</a>
+                    <a href="javascript:;" class="swiper-slide">感冒</a>
+                    <a href="javascript:;" class="swiper-slide">肠胃炎</a>
+                    <a href="javascript:;" class="swiper-slide">呼吸内科</a>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="m-q-list" id="scroller">
+                <ul class="m-q-list-ul" id="list">
+                    <li>
+                        <div class="m-flex-box">
+                            <div class="user-pic">
+                                <a href="javascript:;">
+                                    <img src="img/doc02.png" alt="">
+                                </a>
+                            </div>
+                            <div class="m-q-list-con m-flex">
+                                <div class="m-q-list-con-top">
+                                    <a href="javascript:;">
+                                        <span class="q-name">笑笑长乐</span>
+                                        <p class="q-tile">鼻窦炎牙龈出血？</p>
+                                        <p class="q-text line-comp3">朋友家的宝宝刚54天，常听朋友说宝宝肚子呼噜呼噜的响是朋友家的宝宝刚54天，常听朋友说宝宝肚子呼噜呼噜的响是朋友家的宝宝刚54天，常听朋友说宝宝肚子呼噜呼噜的响是朋友家的宝宝刚54天，常听朋友说宝宝肚子呼噜呼噜的响是</p>
+                                    </a>
+                                </div>
+                                <div class="m-q-list-con-bot m-flex-box">
+                                    <div class="m-flex m-q-tips">
+                                        <a href="javascript:;">儿科</a>
+                                    </div>
+                                    <div class="m-q-time">
+                                        <span class="jifen"><i class="jinbin-icon"></i><span>4</span></span>
+                                        <span>|</span>
+                                        <span>2016-2-17</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        <div class="m-flex-box">
+                            <div class="user-pic">
+                                <a href="javascript:;">
+                                    <img src="img/doc02.png" alt="">
+                                </a>
+                            </div>
+                            <div class="m-q-list-con m-flex">
+                                <div class="m-q-list-con-top">
+                                    <a href="javascript:;">
+                                        <span class="q-name">笑笑长乐</span>
+                                        <p class="q-tile">鼻窦炎牙龈出血？</p>
+                                        <p class="q-text line-comp3">朋友家的宝宝刚54天，常听朋友说宝宝肚子呼噜呼噜的响是朋友家的宝宝刚54天，常听朋友说宝宝肚子呼噜呼噜的响是朋友家的宝宝刚54天，常听朋友说宝宝肚子呼噜呼噜的响是朋友家的宝宝刚54天，常听朋友说宝宝肚子呼噜呼噜的响是</p>
+                                    </a>
+                                </div>
+                                <div class="m-q-list-con-bot m-flex-box">
+                                    <div class="m-flex m-q-tips">
+                                        <a href="javascript:;">儿科</a>
+                                    </div>
+                                    <div class="m-q-time">
+                                        <span class="jifen"><i class="jinbin-icon"></i><span>4</span></span>
+                                        <span>|</span>
+                                        <span>2016-2-17</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        <div class="m-flex-box">
+                            <div class="user-pic">
+                                <a href="javascript:;">
+                                    <img src="img/doc02.png" alt="">
+                                </a>
+                            </div>
+                            <div class="m-q-list-con m-flex">
+                                <div class="m-q-list-con-top">
+                                    <a href="javascript:;">
+                                        <span class="q-name">笑笑长乐</span>
+                                        <p class="q-tile">鼻窦炎牙龈出血？</p>
+                                        <p class="q-text line-comp3">朋友家的宝宝刚54天，常听朋友说宝宝肚子呼噜呼噜的响是朋友家的宝宝刚54天，常听朋友说宝宝肚子呼噜呼噜的响是朋友家的宝宝刚54天，常听朋友说宝宝肚子呼噜呼噜的响是朋友家的宝宝刚54天，常听朋友说宝宝肚子呼噜呼噜的响是</p>
+                                    </a>
+                                </div>
+                                <div class="m-q-list-con-bot m-flex-box">
+                                    <div class="m-flex m-q-tips">
+                                        <a href="javascript:;">儿科</a>
+                                    </div>
+                                    <div class="m-q-time">
+                                        <span class="jifen"><i class="jinbin-icon"></i><span>4</span></span>
+                                        <span>|</span>
+                                        <span>2016-2-17</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        <div class="m-flex-box">
+                            <div class="user-pic">
+                                <a href="javascript:;">
+                                    <img src="img/doc02.png" alt="">
+                                </a>
+                            </div>
+                            <div class="m-q-list-con m-flex">
+                                <div class="m-q-list-con-top">
+                                    <a href="javascript:;">
+                                        <span class="q-name">笑笑长乐</span>
+                                        <p class="q-tile">鼻窦炎牙龈出血？</p>
+                                        <p class="q-text line-comp3">朋友家的宝宝刚54天，常听朋友说宝宝肚子呼噜呼噜的响是朋友家的宝宝刚54天，常听朋友说宝宝肚子呼噜呼噜的响是朋友家的宝宝刚54天，常听朋友说宝宝肚子呼噜呼噜的响是朋友家的宝宝刚54天，常听朋友说宝宝肚子呼噜呼噜的响是</p>
+                                    </a>
+                                </div>
+                                <div class="m-q-list-con-bot m-flex-box">
+                                    <div class="m-flex m-q-tips">
+                                        <a href="javascript:;">儿科</a>
+                                    </div>
+                                    <div class="m-q-time">
+                                        <span class="jifen"><i class="jinbin-icon"></i><span>4</span></span>
+                                        <span>|</span>
+                                        <span>2016-2-17</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部固定-->
+<div class="footer-fixed">
+    <a href="javascript:;" class="active">
+        <span class="iconfont icon-shouye"></span>
+        首页
+    </a>
+    <a href="ask.html"> <span class="iconfont icon-message"></span>提问</a>
+    <a href="doctor-list.html"> <span class="iconfont icon-yishengxuanze"></span>医生</a>
+    <a href="person-content.html"> <span class="iconfont icon-wode"></span>我的</a>
+</div>
+</body>
+</html>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/isscroll/Scrollload.js"></script>
+<script src="plug/swiper/js/swiper.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+
+
+    $('.user-type-btn a').on('click',function(){
+        $('.user-type-choose').addClass('active');
+    });
+    //下拉加载更多
+    //    下拉加载
+
+
+    var count=0;
+
+    var data = ' ';
+
+
+
+
+
+    new Scrollload(document.querySelector('#scroller'), function(sl){//this===sl'
+
+        setTimeout(function () {
+            if (count++ < 6) {
+                $('#list').append(data);
+                sl.unLock();
+            } else {
+                sl.noData();
+            }
+        }, 500);
+        //  var userid = 17;
+        //我这里用jquery的不是因为需要jquery，只是jquery的语法看起来比较简单。大家都认识。
+        //  $.ajax({
+        //      type: 'post',
+        //      url: "/Ajax/recordlist",
+        //      dataType: 'json',
+        //      data:{page:pagenum1,userid:userid},
+        //      success: function(data){
+        //        if (data['list'].length!='0') {//end在这里就表示已经加载完的意思，真实业务需要你通过data来判断。
+        //          getrecord(data.list);
+        //            pagenum1++;
+        //          // 每次数据加载完，必须解锁。
+        //          // 需要解锁的原因是插件在每次到底部的时候都会去锁住不调用loadMoreFn，你必须解锁了下次到底部的时候才能继续调用loadMoreFn。为什么要锁住呢？如果不锁住就会连续调用loadMoreFn.
+        //          sl.unLock()
+        //        } else {
+        //          //如果加载完了，那么需要调用noData方法。这样底部DOM会从原来的加载动画变成结束div
+        //            if($('#scroller2').find('li').length<=1){
+        //                $('.scrollload-bottom').before("<div id='no-data2'></div>");
+        //
+        //            }else(
+        //                sl.noData()
+        //            )
+        //
+        //        }
+        //    },
+        //    error: function(xhr, type){
+        //        // 加载出错，需要执行该方法。这样底部DOM会出现出现异常的样式。
+        //        sl.throwException()
+        //    }
+        //  })
+    })
+
+
+
+    //banner
+    var mySwiper =  new Swiper ('#m-index-banner', {
+        loop: true,
+
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+
+    });
+
+    var online =  new Swiper('#online', {
+        slidesPerView: 'auto',
+        paginationClickable: true,
+    });
+
+    var swiper2 = new Swiper('#common-nav', {
+        scrollbar: '.swiper-scrollbar',
+        slidesPerView: 4,
+        paginationClickable: true,
+        spaceBetween: 5,
+        scrollbarHide: true,
+    });
+
+
+
+
+</script>

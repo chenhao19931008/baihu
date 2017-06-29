@@ -1,0 +1,1 @@
+[{"src":"img/banner/1.png"},{"src":"img/banner/2.png"},{"src":"img/banner/3.png"}]

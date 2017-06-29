@@ -1,0 +1,268 @@
+body{
+    background-color: #fff;
+}
+.jifen-list li{
+    line-height:0.4rem;
+    padding:0.3rem 0.2rem;
+    font-size:0.24rem;
+}
+.jinfen-list-dec .jifen-type{
+    font-size:0.28rem;
+}
+.jinfen-list-dec .time{
+    color: #919191;
+}
+/*钱包*/
+.public-head .record{
+    width:1rem;
+    height:1rem;
+    line-height:1rem;
+    position: absolute;
+    right:0;
+    top:0;
+    text-align: center;
+    color: #fff;
+
+}
+.public-head .record .iconfont{
+    font-size:0.36rem;
+}
+
+/*钱包的头部*/
+.wallet-body{
+    background-color: #f7f7f7;
+}
+.person-wallet-top{
+    height:2.55rem;
+    background-color: #4f97fd;
+    text-align: center;
+    color: #fff;
+}
+.person-wallet-ye{
+    padding:0.46rem 0;
+    font-size:0.3rem;
+}
+.person-wallet-ye .sl{
+    font-size:0.4rem;
+    font-weight:bold;
+}
+.person-wallet-top .rechange{
+    display: inline-block;
+    height:0.62rem;
+    line-height:0.62rem;
+    text-align: center;
+    width:2.1rem;
+    color: #fff;
+    background-color: #6daaff;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    border-radius:30px;
+    -webkit-box-shadow: 0 0 20px rgba(0,0,27,.1);
+    -moz-box-shadow: 0 0 20px rgba(0,0,27,.1) ;
+    box-shadow: 0 0 20px rgba(0,0,27,.1);
+}
+/*说明*/
+.person-wallet-bot{
+    margin:0 0.2rem;
+    background-color: #fff;
+    min-height:9rem;
+}
+.person-wallet-bot dl {
+    font-size:0.28rem;
+    line-height:0.4rem;
+    padding:0.5rem 0.2rem 0;
+}
+.person-wallet-bot dl dt{
+    font-size:0.3rem;
+    height:0.6rem;
+}
+
+/*充值积分*/
+.pay-integral{
+    padding:0 0.15rem;
+}
+.pay-integral-title{
+    line-height:0.8rem;
+
+}
+.pay-integral-list{
+    margin-right:-0.3rem;
+}
+.pay-integral-list li{
+    width:29%;
+    text-align: center;
+    margin:0 0.3rem 0.42rem 0;
+    border:1px solid #dcdcdc;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height:0.52rem;
+    padding:0.3rem 0;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+.pay-integral-list li.active{
+    border:1px solid #6eaaff;
+}
+.pay-integral-list li span{
+    font-weight: bold;
+    color: #4f97fd;
+    display: block;
+    font-size:18px;
+}
+.m-zdy-btn p{
+    width:80%;
+    height:0.52rem;
+    line-height:0.52rem;
+    text-align: center;
+    color: #fff;
+    background-color: #6eaaff;
+    margin: 0 auto;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    border-radius:30px;
+}
+
+/*支付方式*/
+.pay-line-box .pay-line{
+    display: inline-block;
+    width:2.11rem;
+    height:0.66rem;
+    background: url("../img/center/pay-icon.png") 0 0 no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover;
+    border:1px solid #dcdcdc;
+    margin-right:0.6rem;
+}
+.pay-line-box .pay-line.active{
+    border:1px solid #6eaaff;
+}
+.pay-line-box .pay-line.wx{
+    background-position: 0 -0.76rem;
+}
+.must-pay-btn{
+    width:3.22rem;
+    height:0.72rem;
+    line-height:0.72rem;
+    text-align: center;
+    margin:1rem auto 0;
+    display: block;
+    background-color: #6eaaff;
+    color: #fff;
+    border-bottom:0.08rem solid #4787e1;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    border-radius:30px;
+}
+/*充值modal*/
+.zdy-pay-modal{
+    width:100%;
+    height:100%;
+    position: fixed;
+    background: rgba(0,0,0,.7);
+    left:0;
+    top:0;
+    display: none;
+}
+.zdy-pay-modal .modal-in{
+    width:6rem;
+    height:4.86rem;
+    background-color: #fff;
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left:-3rem;
+    margin-top:-2.43rem;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    padding:0 0.15rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.zdy-pay-modal .modal-in .close-modal{
+    width:0.5rem;
+    height:0.5rem;
+    line-height:0.5rem;
+    text-align: center;
+    color: #6eaaff;
+    position: absolute;
+    right:-0.15rem;
+    top:-0.15rem;
+    background: #fff;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size:20px;
+    border:1px solid #dcdcdc;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.zdy-pay-modal .pay-number-inp{
+    width:100%;
+    height:1rem;
+    border:1px solid #dcdcdc;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    margin:0.66rem 0;
+    padding-left:0.15rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.zdy-pay-modal .confirm-btn{
+    width:1.86rem;
+    height:.66rem;
+    line-height:0.66rem;
+    color: #fff;
+    font-size:16px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    border-radius:30px;
+    background-color: #6eaaff;
+    border:none;
+    margin: 0 auto;
+    display: block;
+}
+/*充值成功*/
+.pay-success-box{
+    position: relative;
+    padding:2.4rem 0 0 0;
+    text-align: center;
+}
+.pay-success-box .pay-success-icon{
+    width:1.1rem;
+    height:0.72rem;
+    position: absolute;
+    left:50%;
+    top:1.4rem;
+    margin-left:-0.55rem;
+    background: url("../img/center/pay-success.png") no-repeat;
+    -webkit-background-size:contain;
+    background-size:contain;
+}
+.pay-success-box p{
+    font-size:20px;
+    padding:0.2rem 0;
+}
+.pay-success-box .back-index{
+    display: inline-block;
+    width:2.08rem;
+    height:0.54rem;
+    line-height:0.54rem;
+    text-align: center;
+    background-color: #6eaaff;
+    border:1px solid #dfdfdf;
+    color: #fff;
+    margin:1.5rem auto;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;;
+}

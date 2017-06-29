@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>基本信息认证</title>
+    <!--rem布局-->
+    <script src="js/reset_font.js"></script>
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/person-center.css">
+</head>
+<body style="padding-bottom: 0;">
+<!--头部-->
+<div class="public-head m-flex-box">
+    <a href="javascript:;" class="back"><span class="back-icon"></span></a>
+    <h2 class="m-flex public-head-title">基本信息认证</h2>
+    <!--<a href="javascript:;" class="public-right-btn">修改</a>-->
+</div>
+<!--基本信息认证-->
+<div class="attestation-box">
+    <div class="attestation-top m-flex-box">
+        <a href="javascript:;">
+            <span class="att-count att-count-line active">1</span>
+            <p>上传信息</p>
+        </a>
+        <a href="javascript:;">
+            <span class="att-count att-count-line active">2</span>
+            <p>认证资料</p>
+        </a>
+        <a href="javascript:;">
+            <span class="att-count">3</span>
+            <p>提交审核</p>
+        </a>
+    </div>
+    <div class="step-wrap">
+        <!--认证头像上传-->
+        <div class="step-item">
+            <h2 class="step-item-title">1、认证头像</h2>
+            <div class="m-flex-box step-item-content flex-vc">
+                <div class="file step-item-pic">
+                    <div class="pic-show-box">
+                        <img src="img/center/upload-bg.png" alt="" id="show_img1" data-type="2">
+                        <div class="loading-box"></div>
+                    </div>
+                    <input type="file" id="file">
+                </div>
+                <div class="m-flex">
+                    <p>请上传身穿白大褂的证件照</p>
+                    <p>不可使用生活照片并确保照片清晰</p>
+                    <p>照片大于150*150px</p>
+                </div>
+            </div>
+        </div>
+        <!--认证资质-->
+        <div class="step-item">
+            <h2 class="step-item-title">2、认证资质</h2>
+            <div class="m-flex-box step-item-content flex-vc">
+                <div class="file step-item-pic">
+                    <div class="pic-show-box">
+                        <div class="loading-box"></div>
+                        <img src="img/center/upload-bg.png" alt="" id="show_img2" data-type="2">
+
+                    </div>
+                    <input type="file" id="file2">
+                </div>
+                <div class="m-flex">
+                    <p>请上传医生资格证</p>
+                    <p>确保照片清晰</p>
+                    <p>请提交正面清晰照片</p>
+                </div>
+            </div>
+        </div>
+        <!--认证职称-->
+        <div class="step-item">
+            <h2 class="step-item-title">3、认证职称</h2>
+            <div class="m-flex-box step-item-content flex-vc">
+                <div class="file step-item-pic">
+                    <div class="pic-show-box">
+                        <img src="img/center/upload-bg.png" alt="" id="show_img3" data-type="2">
+                        <div class="loading-box"></div>
+                    </div>
+                    <input type="file" id="file3">
+                </div>
+                <div class="m-flex">
+                    <p>请上医生职称证</p>
+                    <p>确保照片清晰</p>
+                    <p>请提交正面清晰照片</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <a href="javascript:;" class="btn js-next2">下一步</a>
+
+
+</div>
+
+</body>
+</html>
+<script src="js/jquery-1.11.2.min.js"></script>
+<!--end-->
+<script src="plug/layer_mobile/layer.js"></script>
+<script src="js/main.js"></script>
+<script>
+
+
+    /*-------------------------------------上传资质认证----------------------------------------------*/
+
+    new showImg('#file','#show_img1');//上传认证头像
+
+    new showImg('#file2','#show_img2');//上传认证资质
+
+    new showImg('#file3','#show_img3');//上传认证职称证
+
+
+    function showImg(inputId,showImgId){
+        this.inputId=inputId;
+        this.showImgId=showImgId;
+        var _this =this;
+
+        $(inputId).change(function() {
+
+            var files = $(inputId).get(0).files;
+            var filepath = $(inputId).val();
+            for (var i = 0; i < files.length; i++) {
+
+                var extStart = filepath.lastIndexOf(".");
+                var ext = filepath.substring(extStart, filepath.length).toUpperCase();
+                /*
+                 描述：鉴定每个图片上传尾椎限制
+                 * */
+                if (ext != ".BMP" && ext != ".PNG" && ext != ".GIF" && ext != ".JPG" && ext != ".JPEG") {
+                    layer.open({
+                        skin: "msg",
+                        content: "请选择图片后上传",
+                        time: 1
+                    });
+                    $(inputId).val("");
+
+                    return false;
+                }
+
+
+            }
+
+
+            $.each(files, function (index, el) {
+
+                var src = getObjectURL(el);
+
+                var img = new Image();
+
+                img.src = src;
+
+                $(_this.showImgId).siblings('.loading-box').show();
+
+                img.onload = function () {
+
+                    $(_this.showImgId).siblings('.loading-box').hide();
+                    $(showImgId).attr('src', src);
+
+                    $(showImgId).attr('data-type', "1");
+                };
+
+            });
+        });
+
+
+    }
+
+
+    //返回图片编码
+    function getObjectURL(file) {
+        var url = null;
+        if (window.createObjectURL != undefined) { // basic
+            url = window.createObjectURL(file);
+        } else if (window.URL != undefined) { // mozilla(firefox)
+            url = window.URL.createObjectURL(file);
+        } else if (window.webkitURL != undefined) { // webkit or chrome
+            url = window.webkitURL.createObjectURL(file);
+        }
+        return url;
+    }
+
+
+
+    /*-------------------------------------上传资质认证结束----------------------------------------------*/
+
+
+
+    /*-------------------------------------提交下一步验证----------------------------------------------*/
+
+
+        function reg_upload(header,aptitude,title){
+
+                this.att_header = $(header);
+
+                this. att_aptitude = $(aptitude);
+
+                this.att_title   =   $(title);
+
+                if(att_header.attr('data-type')=="2"){
+                    layer.open({
+                        skin:"msg",
+                        content:"请上传认证头像",
+                        time:1
+                    });
+
+                    return false;
+                }else if(att_aptitude.attr('data-type')=="2"){
+                    layer.open({
+                        skin:"msg",
+                        content:"请上传认证资质",
+                        time:1
+                    });
+
+                    return false;
+                }else if(att_title.attr('data-type')=="2"){
+                    layer.open({
+                        skin:"msg",
+                        content:"请上传认证职称",
+                        time:1
+                    });
+
+                    return false;
+                }
+
+                return true;
+
+
+        }
+
+
+
+        $('.js-next2').on('click',function(){
+
+            var reg_fn = reg_upload('#show_img1','#show_img2','#show_img3');
+
+            if(!reg_fn){
+                return false;
+            }
+
+            window.location.href = "attestation-info3.html";
+
+        });
+
+    /*-------------------------------------提交下一步验证结束----------------------------------------------*/
+
+
+
+
+</script>
